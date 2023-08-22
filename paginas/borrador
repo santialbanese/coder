@@ -1,0 +1,526 @@
+<body class="tabla colortodo">
+    <table border="4px">
+        <tr class="textogrande">
+            <th><a href="../index.html" class="tabla">Home</a></th>
+            <th><a href="nosotros.html" class="tabla">Nosotros</a></th>
+            <th><a href="productos.html" class="tabla">Productos</a></th>
+            <th><a href="../paginas/contacto.html" class="tabla">Contacto</a></th>
+        </tr>
+    </table>
+    <br>
+    <h1 id="tit">CATÁLOGO</h1>
+    <h2 class="tit2">BOMBONES DE CHOCOLATE</h2>
+    <div class="div-1 agrando">
+        <img src="../multimedia/arlequinDLL.jpg" alt="">
+        <p class="todos_titulos">Arlequin Dulce De Leche</p>
+        <p>Chocolate con leche y blanco
+            relleno con dulce de leche.</p>
+    </div>
+    <div class="div-2 agrando">
+        <img src="../multimedia/arlequinrojo.jpg" alt="">
+        <p class="todos_titulos">Arlequin Rojo</p>
+        <p>Chocolate con leche relleno de
+            dulce de leche.</p>
+    </div>
+    <div class="div-3 agrando">
+        <img src="../multimedia/arlequinvioleta.jpg" alt="">
+        <p class="todos_titulos">Arlequin Violeta</p>
+        <p>Chocolate blanco relleno
+            de crema oreo.</p>
+    </div>
+    <div class="div-4 agrando">
+        <img src="../multimedia/arlequinrocher.jpg" alt="">
+        <p class="todos_titulos">Arlequin Rocher</p>
+        <p>Chocolate con leche y semiamargo
+            relleno con crema de avellanas y
+            cacao.</p>
+    </div>
+    <div class="div-5 agrando">
+        <img src="../multimedia/cereza.jpg" alt="">
+        <p class="todos_titulos">Cereza</p>
+        <p>Chocolate semiamargo
+            relleno de licor de cereza.</p>
+    </div>
+    <div class="div-6 agrando">
+        <img src="../multimedia/cognac.jpg" alt="">
+        <p class="todos_titulos">Cognac</p>
+        <p>Chocolate semiamargo
+            relleno de licor cognac.</p>
+    </div>
+    <div class="div-7 agrando">
+        <img src="../multimedia/rhum.jpg" alt="">
+        <p class="todos_titulos">Rhum</p>
+        <p>Chocolate semiamargo
+            relleno de licor rhum.</p>
+    </div>
+    <div class="div-8 agrando">
+        <img src="../multimedia/whisky.jpg" alt="">
+        <p class="todos_titulos">Whisky</p>
+        <p>Chocolate semiamargo
+            relleno de licor de whisky.</p>
+    </div>
+    <div class="div-9 agrando">
+        <img src="../multimedia/gajito.jpg" alt="">
+        <p class="todos_titulos">Gajito</p>
+        <p>Chocolate semiamargo
+            con sabor a naranja.</p>
+    </div>
+    <div class="div-10 agrando">
+        <img src="../multimedia/hojita de menta.jpg" alt="">
+        <p class="todos_titulos">Hojita</p>
+        <p>Chocolate semiamargo
+            con sabor a menta.</p>
+    </div>
+    <div class="div-11 agrando">
+        <img src="../multimedia/flor semi.jpg" alt="">
+        <p class="todos_titulos">Flor Semiamarga</p>
+    </div>
+    <div class="div-12 agrando">
+        <img src="../multimedia/flor blanca.jpg" alt="">
+        <p class="todos_titulos">Flor Blanca</p>
+    </div>
+    <div class="div-13 agrando">
+        <img src="../multimedia/flor leche.jpg" alt="">
+        <p class="todos_titulos">Flor Leche</p>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<table border="8px">
+    <tr class="textogrande">
+        <th><a href="index.html" class="tabla">Home</a></th>
+        <th><a href="paginas/nosotros.html" class="tabla">Nosotros</a></th>
+        <th><a href="paginas/productos.html" class="tabla">Productos</a></th>
+        <th><a href="paginas/contacto.html" class="tabla ">contacto</a></th>
+    </tr>
+
+</table>
+<div class="imagenes agrando">
+    <img src="multimedia/1piñacolada.jpg" alt="">
+    <img src="multimedia/2bananasplit.jpg" alt="">
+    <img src="multimedia/3hojitamenta.jpg" alt="">
+    <img src="multimedia/4copitorhum.jpg" alt="">
+    <img src="multimedia/5corazonsemi.jpg" alt="">
+</div>
+
+<div class="FONDO1 agrando2">
+    <p class="parrafo">Hacé tu pedido online!</p>
+</div>
+
+
+
+<!-- proximo -->
+.whatsapp-icono:hover {
+    background-color: #128c7e; 
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+
+
+.div-1{
+    position: absolute;
+    top: 300px; margin-left: 90px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-2{
+    position: absolute;
+    left: 390px; top: 300px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-3{
+    position: absolute;
+    left: 690px; top: 300px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-4{
+    position: absolute;
+    left:990px; top: 300px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-5{
+    position: absolute;
+    top: 700px; margin-left: 90px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-6{
+    position: absolute;
+    left:390px; top: 700px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-7{
+    position: absolute;
+    left:690px; top: 700px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-8{
+    position: absolute;
+    left:990px; top: 700px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-9{
+    position: absolute;
+    top: 1100px; margin-left: 45px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-10{
+    position: absolute;
+    left:295px; top: 1100px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-11{
+    position: absolute;
+    left:545px; top: 1100px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-12{
+    position: absolute;
+    left:795px; top: 1100px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-13{
+    position: absolute;
+    left:1045px; top: 1100px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-14{
+    position: absolute;
+    top: 1500px; margin-left: 45px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-15{
+    position: absolute;
+    top: 1500px; left: 295px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-16{
+    position: absolute;
+    top: 1500px; left: 545px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-17{
+    position: absolute;
+    top: 1500px; left: 795px;
+    display: block;
+    padding-right: 1050px;
+}
+.div-18{
+    position: absolute;
+    top: 1500px; left: 1045px;
+    display: block;
+    padding-right: 1050px;
+}
+
+<!-- BORRADOR DE "PRODUCTOS" -->
+
+<body class="colortodo">
+    <ul class="titprin">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+        <li><a href="../paginas/contacto.html">Contacto</a></li>
+        <li><a href="../paginas/promos.html">Promos</a></li>
+    </ul>    
+    <br> 
+    <main>
+        <h1 id="tit">CATÁLOGO</h1>
+        <h2 class="tit2">BOMBONES DE CHOCOLATE</h2>
+    </main>
+    <div class="div-1 agrando">
+        <img src="../multimedia/arlequinDLL.jpg" alt="">
+        <p class="todos_titulos">Arlequin Dulce De Leche</p>
+        <p>Chocolate con leche y blanco
+            relleno con dulce de leche.</p>
+    </div>
+    <div class="div-2 agrando">
+        <img src="../multimedia/arlequinrojo.jpg" alt="">
+        <p class="todos_titulos">Arlequin Rojo</p>
+        <p>Chocolate con leche relleno de
+            dulce de leche.</p>
+    </div>
+    <div class="div-3 agrando">
+        <img src="../multimedia/arlequinvioleta.jpg" alt="">
+        <p class="todos_titulos">Arlequin Violeta</p>
+        <p>Chocolate blanco relleno
+            de crema oreo.</p>
+    </div>
+    <div class="div-4 agrando">
+        <img src="../multimedia/arlequinrocher.jpg" alt="">
+        <p class="todos_titulos">Arlequin Rocher</p>
+        <p>Chocolate con leche y semiamargo
+            relleno con crema de avellanas y
+            cacao.</p>
+    </div>
+    <div class="div-5 agrando">
+        <img src="../multimedia/cereza.jpg" alt="">
+        <p class="todos_titulos">Cereza</p>
+        <p>Chocolate semiamargo
+            relleno de licor de cereza.</p>
+    </div>
+    <div class="div-6 agrando">
+        <img src="../multimedia/cognac.jpg" alt="">
+        <p class="todos_titulos">Cognac</p>
+        <p>Chocolate semiamargo
+            relleno de licor cognac.</p>
+    </div>
+    <div class="div-7 agrando">
+        <img src="../multimedia/rhum.jpg" alt="">
+        <p class="todos_titulos">Rhum</p>
+        <p>Chocolate semiamargo
+            relleno de licor rhum.</p>
+    </div>
+    <div class="div-8 agrando">
+        <img src="../multimedia/whisky.jpg" alt="">
+        <p class="todos_titulos">Whisky</p>
+        <p>Chocolate semiamargo
+            relleno de licor de whisky.</p>
+    </div>
+    <div class="div-9 agrando">
+        <img src="../multimedia/gajito.jpg" alt="">
+        <p class="todos_titulos">Gajito</p>
+        <p>Chocolate semiamargo
+            con sabor a naranja.</p>
+    </div>
+    <div class="div-10 agrando">
+        <img src="../multimedia/hojita de menta.jpg" alt="">
+        <p class="todos_titulos">Hojita</p>
+        <p>Chocolate semiamargo
+            con sabor a menta.</p>
+    </div>
+    <div class="div-11 agrando">
+        <img src="../multimedia/flor semi.jpg" alt="">
+        <p class="todos_titulos">Flor Semiamarga</p>
+    </div>
+    <div class="div-12 agrando">
+        <img src="../multimedia/flor blanca.jpg" alt="">
+        <p class="todos_titulos">Flor Blanca</p>
+    </div>
+    <div class="div-13 agrando">
+        <img src="../multimedia/flor leche.jpg" alt="">
+        <p class="todos_titulos">Flor Leche</p>
+    </div>
+    <div class="div-14 agrando">
+        <img src="../multimedia/trufa leche.jpg" alt="">
+        <p class="todos_titulos">Trufa Leche</p>
+        <p>Chocolate con leche
+            con relleno de ganache
+            al licor.</p>
+    </div>
+    <div class="div-15 agrando">
+        <img src="../multimedia/trufa rhum.jpg" alt="">
+        <p class="todos_titulos">Trufa Rhum</p>
+        <p>Chocolate semiamargo con
+            relleno de ganache al
+            rhum.</p>
+    </div>
+    <div class="div-16 agrando">
+        <img src="../multimedia/marmolado.jpg" alt="">
+        <p class="todos_titulos">Trufa Marmolada</p>
+        <p></p>
+    </div>
+    <div class="div-17 agrando">
+        <img src="../multimedia/copito lemon.jpg" alt="">
+        <p class="todos_titulos">Copito Lemon</p>
+        <p>Chocolate blanco relleno con
+            crema de limon y jengibre.</p>
+    </div>
+    <div class="div-18 agrando">
+        <img src="../multimedia/4copitorhum.jpg" alt="">
+        <p class="todos_titulos">Copito Rhum</p>
+        <p>Chocolate con leche
+            relleno con dulce de
+            leche con rhum.</p>
+    </div>
+
+</body>
+
+
+header ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+
+  header ul li {
+    display: inline; 
+    margin-right: 10px; 
+}
+
+top: 5px;
+    background-color: rgba(124, 118, 118, 0.3);
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    
+    }
+<!-- index -->
+    <div>
+        <h1 class="sweet">SWEET MAGIC</h1>
+    </div>
+    <p class="texto-secundario">Chocolate con leche y blanco relleno con dulce de leche.</p>
+
+
+
+
+    .menu-chico{
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: auto;
+        font-size: 15px;
+    }
+    .header-todos img{
+        width: 200px;
+        height: 200px;
+    }
+    #tit{
+        font-size: 40px;
+    }
+    .tit2{
+        font-size: 30px;
+    }
+    .tit-bombones{
+        font-size: 20px;
+    }
+    .divs img{
+        width: 130px;
+        height: 130px;
+    }
+    .divs-texto{
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+    div .texto-secundario{
+        display: grid;
+        text-align: center;
+    }
+
+<!-- promos  -->
+
+    <body class="fondopromo">
+        <header class="header-todos color-nos">
+            <img src="../multimedia/logo2png.png" class="img2" alt="">
+        <nav>
+            <ul class="menu-chico">
+                <li><a class="text-white" href="../index.html">Home</a></li>
+                <li><a class="text-white" href="productos.html">Productos</a></li>
+                <li><a class="text-white" href="nosotros.html">Nosotros</a></li>
+                <li><a class="text-white" href="contacto.html">Contacto</a></li>
+                <li><a class="text-white" href="promos.html">Promos</a></li>
+            </ul>
+        </nav>
+        </header>   
+         
+        <hr>
+        <div class="promos">
+            <a href="#promo1" class="promo">promo 1</a>
+            <a href="#promo2" class="promo">promo 2</a>
+            <a href="#promo3" class="promo">promo 3</a>
+            <a href="#promo4" class="promo">promo 4</a>
+            <a href="#promo5" class="promo">promo 5</a>
+            <a href="#promo6" class="promo">promo 6</a>
+        </div>
+        <hr>
+        <p id="promo1">Promo 1</p>
+        <p id="promo2">Promo 2</p>
+        <p id="promo3">Promo 3</p>
+        <p id="promo4">Promo 4</p>
+        <p id="promo5">Promo 5</p>
+        <p id="promo6">Promo 6</p>
+    </body>
+
+
+
+<!-- CARTAS DE LOS BOMBONES CON BOOSTRAP -->
+<div class="padre-bombones">
+    <div class="card" style="width: 8rem">
+        <img src="../multimedia/arlequinDLL.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Arlequin DDL</h5>
+          <p class="card-text">Chocolate con leche y blanco
+            relleno con dulce de leche.</p>
+          <a href="#" class="btn btn-dark">Agregar al carrito</a>
+        </div>
+    </div>
+    <div class="card" style="width: 8rem;">
+        <img src="../multimedia/arlequinrocher.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Arlequin rocher</h5>
+          <p class="card-text">Chocolate con leche y semiamargo relleno con crema de avellanas y cacao.</p>
+          <a href="#" class="btn btn-dark">Agregar al carrito</a>
+        </div>
+    </div>
+    <div class="card" style="width: 8rem;">
+        <img src="../multimedia/arlequinrojo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Arlequin rojo</h5>
+          <p class="card-text">Chocolate con leche relleno de dulce de leche.</p>
+          <a href="#" class="btn btn-dark">Agregar al carrito</a>
+        </div>
+    </div>
+    <div class="card" style="width: 8rem;">
+        <img src="../multimedia/arlequinvioleta.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Arlequin violeta</h5>
+          <p class="card-text">Chocolate blanco relleno de crema oreo.</p>
+          <a href="#" class="btn btn-dark">Agregar al carrito</a>
+        </div>
+    </div>
+    
+</div>
+
