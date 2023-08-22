@@ -539,6 +539,7 @@ hr.black-line {
       grid-template-columns: auto;
       row-gap: 1rem; 
       justify-items: flex-start;
+      padding: 5px;
     }
   
     .divs {
@@ -571,6 +572,10 @@ hr.black-line {
     }
     .agrandar {
         justify-items: flex-start;
+    }
+    .divs-texto{
+        text-decoration: underline;
+        font-weight: bold;
     }
   
   }
