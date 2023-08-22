@@ -475,6 +475,7 @@ hr.black-line {
         grid-template-columns: auto; 
         row-gap: 1rem; 
         justify-items: flex-start;
+        padding: 5px;
         
     }
     .padre-productos2 {
@@ -482,6 +483,7 @@ hr.black-line {
         grid-template-columns: auto; 
         row-gap: 1rem; 
         justify-items: flex-start;
+        padding: 5px;
         
     }
     .padre-productos3 {
@@ -489,6 +491,7 @@ hr.black-line {
         grid-template-columns: auto; 
         row-gap: 1rem; 
         justify-items: flex-start; 
+        padding: 5px;
         
     }
     
@@ -526,6 +529,10 @@ hr.black-line {
 
     .texto-corrido {
         margin-left: 5px; 
+    }
+    .divs-texto{
+        text-decoration: underline;
+        font-weight: bold;
     }
 }
 /* PRODUCTOS */
