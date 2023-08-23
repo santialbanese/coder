@@ -468,7 +468,7 @@ hr.black-line {
         width: 60px; 
         height: 60px;
         bottom: 10px; 
-    }
+    } 
     .instagram-icono{
         width: 50px; 
         height: 50px;
@@ -485,6 +485,32 @@ hr.black-line {
         font-size: 1rem;
     }
     
+}
+@media (min-width: 900px) and (max-width: 1199px){
+    .agrando2 img {
+        padding: 10px; 
+    }
+    .texto{
+        left: 25%;
+        top: 52%;
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .parrafo{
+        font-size: 22px;
+    }
+    .parrafo2, .parrafo3{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .parrafo2{
+        margin-top: 10px;
+    }
+    .agrandar-menu{
+        font-size: 15px;
+    }
 }
 @media (min-width: 1200px){
     .agrando2 img {
