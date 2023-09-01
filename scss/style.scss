@@ -7,381 +7,421 @@
 
 *{
     margin: 0%;
-    padding: 0;
+    padding: 0%;
     box-sizing: border-box;
 }
 body {
     overflow-x: hidden; 
+    width: 100%;
   }
 body{
     font-family: 'Poppins',
      sans-serif;
 }
-// ESTILOS GLOBALES
 
-
-
-
-// PAGINA DE HOME
-body{
-    .fondo{
-        background-color: #a765478c;
-    }
+footer {
+    background-color: #000; /* Color de fondo negro */
+    min-height: 120px; /* Ajusta la altura mínima según tus necesidades */
+    margin-top: 20px; /* Puedes agregar un margen superior si es necesario */
 }
-header{
-    .color-home{
-        background-image: url(../multimedia/home.jpg)
-    }
-    .navbar img{
-        object-fit: cover;
-        width: 90px;
-        height: 90px;
-    }
-    img{
-        max-width: 200px;
-        max-height: 200px;
-        height: auto;
-        padding: 10px;
-    }        
-    div{
-        button{
-            .colorblanco{
-                background-color: white;
-            }
-        }
-        .img2{
 
-        }
-        ul{
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            li{
-                a{
-                    .agrandar-menu{
-                        color: #E5E5CB;
-                    }
-                    color: whitesmoke;
-                    text-decoration: none;
 
-                }
-            }
-        }
-    }
+/* ESTILOS GLOBALES */
+
+.header-todos{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    font-size: 13px;
+    align-items: center;
 }
-main{
-    .cont{
-        position: relative;
-        display: block;
+.header-todos img{
+    object-fit: cover;
+    width: 110px;
+    height: 110px;
+}
 
-    }
-    .agrando2 img{
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-    }
-    div{
-        .texto{
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        h1{
-            .parrafo{
-                font-size: 20px;
-                color: white;
-                background-color: rgba(0, 0, 0, 0.7);
-                padding: 6px;
-                border-radius: 10px;
-                border: solid 1px black;            
-            }
-        }
-    }
-    div{
-        p{
-            .parrafo2{
-                font-size: 16px;
-                color: #362706;
-                background-color: rgba(0, 0, 0, 0.2);
-                padding: 10px;
-                border-radius: 10px;
-                border: solid 1px black;            
-            }
-        }
-        p{
-            .parrafo3{
-                font-size: 16px;
-                color: #362706;
-                background-color: rgba(0, 0, 0, 0.2);
-                padding: 10px;
-                border-radius: 10px;
-                border: solid 1px black;            
-            }
-        }
-    }
+.navbar img{
+    object-fit: cover;
+    width: 90px;
+    height: 90px;
+}
+
+header img{
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+header nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+
+                    /* PAGINA DE HOME */
+.color-home{
+    background-image: url(../multimedia/home.jpg)
+}
+
+.color-menu-home{
+    color: #362706;
+    text-decoration: underline;
+    
+}
+.color-negro{
+    color: #1A120B;
+}
+.fondo{
+    background-color: #a765478c;
+}
+.agrandar-menu{
+    color: #E5E5CB;
+}
+.cont{
+    position: relative;
+    display: block;
+}
+.agrando2 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.texto {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.parrafo{
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 6px;
+    border-radius: 10px;
+    border: solid 1px black;
+    
+}
+.parrafo2{
+    font-size: 16px;
+    color: #362706;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+.parrafo3{
+    font-size: 16px;
+    color: #362706;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px black;
 }
 hr.black-line2{
     border-color: black;
     margin-bottom: 10px;
 }
-section{
-    a{
-        .color-negro{
-            color: #1A120B;
-        }
-    }
-}
-div{
-    a{
-        .whatsapp-icono {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: block;
-            width: 60px;
-            height: 60px;
-            background-color: #25d366;
-            border-radius: 50%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        .whatsapp-icono img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        } 
-    }
-    a{
-        .instagram-icono{
-            position: fixed;
-            bottom: 90px;
-            right: 20px;
-            display: block;
-            width: 60px;
-            height: 60px;
-            background-color: #5851DB;
-            border-radius: 50%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        .instagram-icono img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        }                
-    }
-}
-// PAGINA DE CONTACTO
 
-body{
-    .color-todo-cont{
-        background-color: #FAEAB1;
-    }
-}
-header{
-    .color-cont{
-        background-image: url(../multimedia/z1.jpg);
-    }
-}
-section{
-    p{
-    .tit-cont{
-        font-weight: bold;
-        text-decoration: underline;
-    }      
-    }
-}
-section{
-    form{
-        ol{
-            li{
-                .margin-cont{
-                    margin-bottom: 20px;
-                }                
-            }
-        }
-    }
+.whatsapp-icono {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-// PAGINA DE PRODUCTOS
-
-body{
-    .colornuevo{
-        background-color: #443424;  
-    }
-}
-main{
-    h1{
-        #tit{
-            text-decoration: underline;
-            font-size: 30px;
-            margin-top: 20px;
-            text-align: center;
-            color: whitesmoke;
-        }        
-    }
-    h2{
-        .tit2{
-            text-decoration: underline; 
-            margin-top: 20px;
-            font-size: 20px;
-            text-align: center;
-            color: whitesmoke;
-        }
-    }
-}
-div{
-    .father{
-        display: grid;
-        row-gap: 0.5rem;
-    }
-    div{
-        .tit-bombones{
-            padding: 20px;
-            margin-top: 10px;
-            text-align: center;
-            color: whitesmoke; 
-            text-decoration: overline;
-        }        
-    }   
-    section{
-        .padre-productos, 
-        .padre-productos2,
-        .padre-productos3{
-            width: 80%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
-            background-color: white;  
-            border: 1px solid black;
-            justify-items: center; 
-            align-items: center;
-            border-radius: 5px;        
-        }
-        div{
-            .divs{
-                margin: 10px;
-                img{
-                    width: 90px;
-                    height: 90px;
-                    margin-left: 20px;
-                }
-            }
-            p{
-                .texto-corrido{
-                    margin-left: 10px;
-                }            
-            }
-            p{
-                .texto-secundario{
-                    display: none;
-                }       
-            }
-        } 
-        .agrandar{
-            font-size: 20px;
-            text-align: center;
-            img {
-                height: 300px;
-                width: 300px;
-            }
-        }     
-    }
-    div{
-        .tit-bombones{
-            padding: 20px;
-            margin-top: 10px;
-            text-align: center;
-            color: whitesmoke; 
-            text-decoration: overline;        
-        }
-    }
+.whatsapp-icono img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-// PAGINA DE PROMOS
 
-body{
-    .fondopromo{
-        background-color: #D5CEA3;
-    }
+.instagram-icono{
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #5851DB;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-header{
-    .promo-body{
-        background: linear-gradient(#3c2a21e1, #63524ae1);
-    }
+
+.instagram-icono img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
-main{
-    .promos{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
-        justify-content: space-evenly;
-    }
-    a{
-        .promo{
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(#3c2a21e1, #63524ae1); 
-            border: 1px solid #1A120B;  
-            border-radius: 10px; 
-            margin: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            font-size: 16px;
-            color: #1A120B;          
-        }
-    }
+.colorblanco{
+    background-color: white;
+}
+.logo-mp{
+    max-width: 300px; /* Establece el ancho máximo deseado */
+    height: auto;
+}
+.footer-estilos{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    padding: 15px;
+}
+
+
+
+
+
+
+                    /* PAGINA DE CONTACTO */
+.color-cont{
+    background-image: url(../multimedia/z1.jpg);
+}
+
+.color-todo-cont{
+    background-color: #FAEAB1;
+}
+.tit-cont{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.margin-cont{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       /* PAGINA DE PRODUCTOS */
+#tit{
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+.tit2{
+    text-decoration: underline; 
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+.colornuevo{
+    background-color: #443424;  
+}
+.agrando img{
+    width: 150px;
+    height: 150px;
+}
+.todos_titulos{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+main div img{
+    Width: 100%;
+    Height: 100%;
+    object-fit: cover;
+}
+.padre-productos,
+.padre-productos2,
+.padre-productos3{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-color: white;  
+    border: 1px solid black;
+    justify-items: center; 
+    align-items: center;
+    border-radius: 5px;
+}
+
+.divs{
+    margin: 10px; 
+}
+
+.divs-doble{
+    grid-column: span 2;
+    text-align: center;
+}
+
+.divs img{
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
+.father{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.tit-bombones{
+    margin-top: 10px;
+    color: whitesmoke; 
+    text-decoration: overline;
+}
+.agrandar img{
+    height: 300px;
+    width: 300px;
+}
+.agrandar{
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto-corrido{
+    margin-left: 10px;
+}
+div .texto-secundario{
+    display: none;
+}
+
+.padre-bombones{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-content: space-evenly;  
+}
+.padding-prod{
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 2%;
+}
+.margen-prod{
+    margin-top: 3%;
+}
+
+
+
+
+
+
+
+
+
+                    /* PAGINA DE PROMOS */
+
+.promo-body{
+    background: linear-gradient(#3c2a21e1, #63524ae1);
+}
+
+.promos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.promo {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#3c2a21e1, #63524ae1); 
+    border: 1px solid #1A120B;  
+    border-radius: 10px; 
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1A120B;  
+}
+.fondopromo{
+    background-color: #D5CEA3;
+}
+.menupromo{
+    margin-left: 67%;
+    margin-top: 1%;
+    display: inline-block;
+    background-color: #E5E5CB;  
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #1A120B; 
+    font-weight: bold;
 }
 hr.black-line {
     border-color: black;
     width: 80%;
     margin-left: 129px;
+  }
+
+
+                        /* CODIGO DE "NOSOTROS" */
+
+.textos-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+.container{
+    margin-bottom: 20px;
+}
+.color-nos{
+    background-image: url(../multimedia/Clinchi.jpg);
+}
+.nos2{
+    color: whitesmoke;
+    font-size: 17px;
+    background-color: rgba(139, 69, 19, 1); 
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px black;
+    
 }
 
-// PAGINA DE NOSOTROS
+.btn-marron {
+    background: linear-gradient(to bottom, #613613, #8B4513); 
+    color: whitesmoke; 
+    border: solid 1px black; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+}
+.degrade-nos{
+    background: linear-gradient( rgba(139, 69, 19, 1), rgb(214, 195, 182));
+}
 
-header{
-    .degrade-nos{
-        background: linear-gradient( rgba(139, 69, 19, 1), rgb(214, 195, 182));
-    }    
-}
-main{
-    .textos-nosotros{
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center;     
-    }
-    p{
-        .nos2{
-            color: whitesmoke;
-            font-size: 17px;
-            background-color: rgba(139, 69, 19, 1); 
-            padding: 10px;
-            border-radius: 10px;
-            border: solid 1px black;        
-        }
-    }
-}
-div{
-    .container{
-        margin-bottom: 20px;
-    }
-    a{
-        .btn-marron{
-            background: linear-gradient(to bottom, #613613, #8B4513); 
-            color: whitesmoke; 
-            border: solid 1px black; 
-            text-decoration: none; 
-            padding: 10px 20px;
-            border-radius: 5px;         
-        }
-    }
-}
 
 @import "./utils/media";
