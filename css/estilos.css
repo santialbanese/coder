@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* SOLO IMPORT */
 * {
   margin: 0%;
@@ -14,11 +13,8 @@ body {
 
 footer {
   background-color: #000;
-  /* Color de fondo negro */
   min-height: 120px;
-  /* Ajusta la altura mínima según tus necesidades */
-  margin-top: 20px;
-  /* Puedes agregar un margen superior si es necesario */ }
+  margin-top: 20px; }
 
 /* ESTILOS GLOBALES */
 .header-todos {
@@ -45,7 +41,7 @@ header img {
   padding: 10px; }
 
 header nav ul li a {
-  color: whitesmoke;
+  color: white;
   text-decoration: none; }
 
 header nav ul {
@@ -153,7 +149,6 @@ hr.black-line2 {
 
 .logo-mp {
   max-width: 300px;
-  /* Establece el ancho máximo deseado */
   height: auto; }
 
 .footer-estilos {
@@ -182,14 +177,14 @@ hr.black-line2 {
   font-size: 30px;
   margin-top: 20px;
   text-align: center;
-  color: whitesmoke; }
+  color: white; }
 
 .tit2 {
   text-decoration: underline;
   margin-top: 20px;
   font-size: 20px;
   text-align: center;
-  color: whitesmoke; }
+  color: white; }
 
 .colornuevo {
   background-color: #443424; }
@@ -239,7 +234,7 @@ main div img {
 
 .tit-bombones {
   margin-top: 10px;
-  color: whitesmoke;
+  color: white;
   text-decoration: overline; }
 
 .agrandar img {
@@ -271,7 +266,7 @@ div .texto-secundario {
 
 /* PAGINA DE PROMOS */
 .promo-body {
-  background: linear-gradient(#3c2a21e1, #63524ae1); }
+  background: linear-gradient(#3c2a21e1, #746057e1); }
 
 .promos {
   display: grid;
@@ -325,7 +320,7 @@ hr.black-line {
   background-image: url(../multimedia/Clinchi.jpg); }
 
 .nos2 {
-  color: whitesmoke;
+  color: white;
   font-size: 17px;
   background-color: saddlebrown;
   padding: 10px;
@@ -334,7 +329,7 @@ hr.black-line {
 
 .btn-marron {
   background: linear-gradient(to bottom, #613613, #8B4513);
-  color: whitesmoke;
+  color: white;
   border: solid 1px black;
   text-decoration: none;
   padding: 10px 20px;
@@ -357,6 +352,17 @@ hr.black-line {
   .parrafo, .parrafo2, .parrafo3 {
     font-size: 14px;
     padding: 8px; }
+  .footer-estilos {
+    grid-template-columns: 1fr;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px; }
+  footer {
+    min-height: 100px; }
+  h6 {
+    font-size: 14px; }
+  .logo-mp {
+    max-width: 200px; }
   .whatsapp-icono {
     width: 50px;
     height: 50px;
@@ -384,9 +390,22 @@ hr.black-line {
   .texto {
     top: 22%; }
   .navbar-toggler {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .footer-estilos {
+    grid-template-columns: auto;
+    font-size: 14px;
+    text-align: center; }
+  footer {
+    min-height: 100px; }
+  h6 {
+    font-size: 16px; }
+  .logo-mp {
+    max-width: 215px; } }
 
 @media (min-width: 900px) and (max-width: 1199px) {
+  .container-fluid img {
+    height: 160px;
+    width: 160px; }
   .whatsapp-icono {
     width: 70px;
     height: 70px;
@@ -413,7 +432,17 @@ hr.black-line {
   .parrafo2 {
     margin-top: 10px; }
   .agrandar-menu {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .footer-estilos {
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    text-align: center; }
+  footer {
+    min-height: 120px; }
+  h6 {
+    font-size: 20px; }
+  .logo-mp {
+    max-width: 400px; } }
 
 @media (min-width: 1200px) {
   .whatsapp-icono {
@@ -440,7 +469,17 @@ hr.black-line {
     font-size: 20px;
     padding: 15px; }
   .agrandar-menu {
-    font-size: 19px; } }
+    font-size: 19px; }
+  .footer-estilos {
+    grid-template-columns: auto auto;
+    font-size: 26px;
+    text-align: center; }
+  footer {
+    min-height: 140px; }
+  h6 {
+    font-size: 26px; }
+  .logo-mp {
+    max-width: 500px; } }
 
 /* PRODUCTOS */
 @media (max-width: 320px) {
@@ -480,6 +519,9 @@ hr.black-line {
 /* PRODUCTOS */
 /* PRODUCTOS */
 @media (min-width: 321px) and (max-width: 500px) {
+  .container-fluid img {
+    height: 120px;
+    width: 120px; }
   .padre-productos,
   .padre-productos2,
   .padre-productos3 {
@@ -515,6 +557,9 @@ hr.black-line {
 /* PRODUCTOS */
 @media (min-width: 768px) {
   /* PRODUCTOS */
+  .container-fluid img {
+    height: 140px;
+    width: 140px; }
   .menu-chico {
     grid-template-columns: repeat(5, auto);
     grid-template-rows: auto;

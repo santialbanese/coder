@@ -20,15 +20,14 @@ body{
 }
 
 footer {
-    background-color: #000; /* Color de fondo negro */
-    min-height: 120px; /* Ajusta la altura mínima según tus necesidades */
-    margin-top: 20px; /* Puedes agregar un margen superior si es necesario */
+    background-color: #000; 
+    min-height: 120px; 
+    margin-top: 20px; 
 }
-
 
 /* ESTILOS GLOBALES */
 
-.header-todos{
+.header-todos{ 
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
@@ -55,7 +54,7 @@ header img{
 }
 
 header nav ul li a{
-    color: whitesmoke;
+    color: $color-blanco;
     text-decoration: none;
 }
 
@@ -64,7 +63,6 @@ header nav ul{
     display: flex;
     gap: 1rem;
 }
-
 
                     /* PAGINA DE HOME */
 .color-home{
@@ -83,7 +81,7 @@ header nav ul{
     background-color: #a765478c;
 }
 .agrandar-menu{
-    color: #E5E5CB;
+    color: #E5E5CB;  
 }
 .cont{
     position: relative;
@@ -104,7 +102,7 @@ header nav ul{
 }
 .parrafo{
     font-size: 20px;
-    color: white;
+    color: $color-blanco;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 6px;
     border-radius: 10px;
@@ -151,7 +149,6 @@ hr.black-line2{
     border-radius: 50%;
 }
 
-
 .instagram-icono{
     position: fixed;
     bottom: 90px;
@@ -171,10 +168,10 @@ hr.black-line2{
     border-radius: 50%;
 }
 .colorblanco{
-    background-color: white;
+    background-color: $color-blanco;
 }
 .logo-mp{
-    max-width: 300px; /* Establece el ancho máximo deseado */
+    max-width: 300px; 
     height: auto;
 }
 .footer-estilos{
@@ -183,6 +180,9 @@ hr.black-line2{
     place-items: center;
     padding: 15px;
 }
+
+
+
 
 
 
@@ -237,14 +237,14 @@ hr.black-line2{
     font-size: 30px;
     margin-top: 20px;
     text-align: center;
-    color: whitesmoke;
+    color: $color-blanco;
 }
 .tit2{
     text-decoration: underline; 
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
-    color: whitesmoke;
+    color: $color-blanco;
 }
 .colornuevo{
     background-color: #443424;  
@@ -271,7 +271,7 @@ main div img{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    background-color: white;  
+    background-color: $color-blanco;
     border: 1px solid black;
     justify-items: center; 
     align-items: center;
@@ -298,7 +298,7 @@ main div img{
 }
 .tit-bombones{
     margin-top: 10px;
-    color: whitesmoke; 
+    color: $color-blanco;
     text-decoration: overline;
 }
 .agrandar img{
@@ -342,7 +342,7 @@ div .texto-secundario{
                     /* PAGINA DE PROMOS */
 
 .promo-body{
-    background: linear-gradient(#3c2a21e1, #63524ae1);
+    background: linear-gradient(#3c2a21e1, #746057e1);
 }
 
 .promos {
@@ -402,7 +402,7 @@ hr.black-line {
     background-image: url(../multimedia/Clinchi.jpg);
 }
 .nos2{
-    color: whitesmoke;
+    color: $color-blanco;
     font-size: 17px;
     background-color: rgba(139, 69, 19, 1); 
     padding: 10px;
@@ -413,7 +413,7 @@ hr.black-line {
 
 .btn-marron {
     background: linear-gradient(to bottom, #613613, #8B4513); 
-    color: whitesmoke; 
+    color: $color-blanco; 
     border: solid 1px black; 
     text-decoration: none; 
     padding: 10px 20px;
