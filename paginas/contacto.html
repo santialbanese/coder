@@ -22,21 +22,21 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 agrandar-menu">
               <li class="nav-item">
-                <a class="nav-link active text-black" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link active text-black agrandar-menu" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="productos.html">Productos</a>
+                <a class="nav-link text-black agrandar-menu" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="nosotros.html">Nosotros</a>
+                <a class="nav-link text-black agrandar-menu" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="contacto.html">Contacto</a>
+                <a class="nav-link text-black agrandar-menu" href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black" href="promos.html">Promos</a>
+                <a class="nav-link text-black agrandar-menu" href="promos.html">Promos</a>
               </li>
             </ul>
           </div>
@@ -45,12 +45,12 @@
 
     <section class="p-2 fs-6">
         <p class="tit-cont">CONTACTATE!</p>
-        <p>Ante cualquier consulta te podés comunicar con nosotros y te responderemos a la brevedad. ¡Lo esperamos!</p>
+        <p class="tit2-cont">Ante cualquier consulta te podés comunicar con nosotros y te responderemos a la brevedad. ¡Lo esperamos!</p>
         <hr>
     </section>
 
     
-    <section class="p-2">
+    <section class="p-2 agrandar-cont">
 
         <form class="fs-6"> 
             <ol>   <!-- ordenada -->
@@ -72,7 +72,7 @@
                 </li>
             
                 <li class="p-2 margin-cont fw-bold">
-                    <label for="terminos">Acepta terminos y condiciones?</label><input type="checkbox" name="terminos">
+                    <label for="terminos">Acepta terminos y condiciones?</label><input class="boton-cont" type="checkbox" name="terminos">
                 </li>
             
                 <li class="p-2 margin-cont fw-bold">
@@ -91,7 +91,7 @@
                     <fieldset>
                         <p>Datos de envio:</p>
 
-                        <label for="direccion">ingresa tu direccion</label>
+                        <label class="p-2" for="direccion">ingresa tu direccion</label>
                         <input type="direccion">
                     </fieldset>
                 </li>
@@ -99,9 +99,10 @@
 
             <br>
 
-            <input type="button">   
-            <input type="reset">    
-            <input type="submit">   
+            <div class="boton2-cont">
+              <input type="reset">    
+            <input type="submit">
+            </div>      
         </form>
     </section>
     <footer class="bg-black footer-estilos p2">

@@ -7,7 +7,8 @@
 
 // mixin sin parametros
 
-@mixin grid{
-    display: grid;
-    
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
