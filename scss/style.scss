@@ -64,6 +64,13 @@ header nav ul{
 }
 
                     /* PAGINA DE HOME */
+.container-index{
+    width: 90%;
+    margin: auto;
+}
+.agrando-p-index{
+    font-size: 14px;
+}
 .color-home{
     background-image: url(../multimedia/home.jpg)
 }
@@ -419,6 +426,8 @@ hr.black-line {
     height: 250px;
     padding: 5px;
 }
-
+.flex2{
+    
+}
 
 @import "./utils/media";

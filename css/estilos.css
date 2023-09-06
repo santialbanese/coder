@@ -48,6 +48,13 @@ header nav ul {
   gap: 1rem; }
 
 /* PAGINA DE HOME */
+.container-index {
+  width: 90%;
+  margin: auto; }
+
+.agrando-p-index {
+  font-size: 14px; }
+
 .color-home {
   background-image: url(../multimedia/home.jpg); }
 
@@ -428,6 +435,10 @@ hr.black-line {
     margin-top: 10px; }
   .agrandar-menu {
     font-size: 17px; }
+  .agrando-p-index {
+    font-size: 16px; }
+  .agrando-tit-index {
+    font-size: 21px; }
   .footer-estilos {
     grid-template-columns: auto auto;
     font-size: 20px;
@@ -465,6 +476,10 @@ hr.black-line {
     padding: 15px; }
   .agrandar-menu {
     font-size: 19px; }
+  .agrando-p-index {
+    font-size: 20px; }
+  .agrando-tit-index {
+    font-size: 25px; }
   .footer-estilos {
     grid-template-columns: auto auto;
     font-size: 26px;
