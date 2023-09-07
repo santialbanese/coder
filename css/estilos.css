@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* SOLO IMPORT */
 * {
   margin: 0%;
@@ -48,7 +49,7 @@ header nav ul {
   gap: 1rem; }
 
 /* PAGINA DE HOME */
-.container-index {
+.container-todos {
   width: 90%;
   margin: auto; }
 
@@ -177,7 +178,7 @@ hr.black-line2 {
   margin-bottom: 20px; }
 
 /* PAGINA DE PRODUCTOS */
-#tit {
+.tit {
   text-decoration: underline;
   font-size: 30px;
   margin-top: 20px;
@@ -272,15 +273,15 @@ div .texto-secundario {
   justify-content: space-evenly; }
 
 .promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
   background: linear-gradient(#3c2a21e1, #63524ae1);
   border: 1px solid #1A120B;
   border-radius: 10px;
   margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: bold;
   font-size: 16px;
   color: #1A120B; }
@@ -288,20 +289,22 @@ div .texto-secundario {
 .fondopromo {
   background-color: #D5CEA3; }
 
-.menupromo {
-  margin-left: 67%;
-  margin-top: 1%;
-  display: inline-block;
-  background-color: #E5E5CB;
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px solid #1A120B;
-  font-weight: bold; }
-
 hr.black-line {
   border-color: black;
   width: 80%;
   margin-left: 129px; }
+
+.imagenes-promos {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center; }
+  .imagenes-promos img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin-top: 20px; }
+  .imagenes-promos .parr-promos {
+    display: none; }
 
 /* CODIGO DE "NOSOTROS" */
 .textos-nosotros {
@@ -309,36 +312,43 @@ hr.black-line {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .textos-nosotros .nos2 {
+    color: white;
+    font-size: 17px;
+    background-color: saddlebrown;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px black; }
 
 .container {
   margin-bottom: 20px; }
+  .container .btn-marron {
+    background: linear-gradient(to bottom, #613613, #8B4513);
+    color: white;
+    border: solid 1px black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px; }
 
 .color-nos {
   background-image: url(../multimedia/Clinchi.jpg); }
 
-.nos2 {
-  color: white;
-  font-size: 17px;
-  background-color: saddlebrown;
-  padding: 10px;
-  border-radius: 10px;
-  border: solid 1px black; }
-
-.btn-marron {
-  background: linear-gradient(to bottom, #613613, #8B4513);
-  color: white;
-  border: solid 1px black;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px; }
-
 .degrade-nos {
   background: linear-gradient(saddlebrown, #d6c3b6); }
 
-.carousel2 {
-  width: 250px;
-  height: 250px;
-  padding: 5px; }
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+/* Animación de deslizamiento desde la izquierda */
+.animate__slideInLeft {
+  animation-name: slideInLeft;
+  animation-delay: 0.5s; }
+
+/* Animación de deslizamiento desde la derecha */
+.animate__slideInRight {
+  animation-name: slideInRight;
+  animation-delay: 0.5s; }
 
 /* HOME */
 @media (max-width: 320px) {
@@ -690,3 +700,43 @@ hr.black-line {
     height: 25px; }
   .agrandar-menu {
     font-size: 22px; } }
+
+@media (max-width: 320px) {
+  .imagenes-promos {
+    grid-template-columns: auto; }
+    .imagenes-promos .parr-promos {
+      display: block;
+      text-decoration: underline;
+      font-weight: bold; }
+  .font-promo {
+    font-size: 22px;
+    margin-top: 50px; }
+  .font-promo2 {
+    font-size: 18px; }
+  .color-boton {
+    background: linear-gradient(#3c2a21e1, #63524ae1); }
+  .promo {
+    width: 100px;
+    height: 75px; } }
+
+@media (min-width: 321px) and (max-width: 500px) {
+  .imagenes-promos {
+    grid-template-columns: auto; }
+    .imagenes-promos .parr-promos {
+      display: block;
+      text-decoration: underline;
+      font-weight: bold; }
+  .font-promo {
+    font-size: 26px;
+    margin-top: 50px; }
+  .font-promo2 {
+    font-size: 22px; }
+  .color-boton {
+    background: linear-gradient(#3c2a21e1, #63524ae1); }
+  .promo {
+    width: 100px;
+    height: 100px; }
+  .texto-promo1 {
+    font-size: 22; }
+  .texto-promo2 {
+    font-size: 18; } }

@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- link de CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Librería de animaciones Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -42,25 +44,62 @@
           </div>
         </div>
       </header>   
-     
-    <hr class="m-5">
-    <main class="promos">
-        <a href="#promo1" class="promo">promo 1</a>
-        <a href="#promo2" class="promo">promo 2</a>
-        <a href="#promo3" class="promo">promo 3</a>
-        <a href="#promo4" class="promo">promo 4</a>
-        <a href="#promo5" class="promo">promo 5</a>
-        <a href="#promo6" class="promo">promo 6</a>
-    </main>
-    <hr class="m-5">
-    <section class="p-2">
-        <p id="promo1">Promo 1</p>
-        <p id="promo2">Promo 2</p>
-        <p id="promo3">Promo 3</p>
-        <p id="promo4">Promo 4</p>
-        <p id="promo5">Promo 5</p>
-        <p id="promo6">Promo 6</p>
-    </section>
+     <div class="container-todos">
+      <div>
+        <h1 class=" fw-bold font-promo">Promos!</h1>
+        <h2 class=" font-promo2">Las mejores promos llegaron a <strong>Sweet magic!</strong></h2>
+       </div>
+      <hr class="m-5">
+      <main class="promos animate__animated animate__fadeInUp">
+          <a href="#promo1" class="promo">promo 1</a>
+          <a href="#promo2" class="promo">promo 2</a>
+          <a href="#promo3" class="promo">promo 3</a>
+          <a href="#promo4" class="promo">promo 4</a>
+          <a href="#promo5" class="promo">promo 5</a>
+          <a href="#promo6" class="promo">promo 6</a>
+      </main>
+      <hr class="m-5">
+      
+      <section id="promo1">
+          <h3 class="fw-bold text-decoration-underline texto-promo1">Promo 1:</h3>
+          <p class="texto-promo2">¡Descuento del <strong>20%</strong> en todos los productos seleccionados durante esta semana!</p>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button color-boton text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <strong>Productos seleccionados:</strong>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body imagenes-promos">
+                <img src="../multimedia/2bananasplit.jpg" alt="banana split">
+                <p class="parr-promos">Banana split</p>
+                <img src="../multimedia/coco-y-dulce.jpg" alt="coco y dulce">
+                <p class="parr-promos">Coco y dulce</p>
+                <img src="../multimedia/copito lemon.jpg" alt="copito lemon">
+                <p class="parr-promos">Copito lemon</p>
+                <img src="../multimedia/corazon-impreso-rojo.jpg" alt="corazón impreso rojo">
+                <p class="parr-promos">Corazón impreso rojo</p>
+                <img src="../multimedia/frutos-del-bosque.jpg" alt="frutos del bosque">
+                <p class="parr-promos">Frutos del bosque</p>
+                <img src="../multimedia/pescadito-blanco.jpg" alt="pescadito blanco">
+                <p class="parr-promos">Pescadito blanco</p>
+                <img src="../multimedia/3hojitamenta.jpg" alt="Hojita de menta">
+                <p class="parr-promos">Hojita de menta</p>
+                <img src="../multimedia/trufa leche.jpg" alt="Trufa leche">
+                <p class="parr-promos">Trufa leche</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     </div>
+
+
+
+
+
+
     <footer class="bg-black footer-estilos p2">
       <!-- pie de pagina -->
       <img class="logo-mp" src="../multimedia/version-horizontal-large-logo-mercado-pago.webp" alt="">

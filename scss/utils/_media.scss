@@ -506,3 +506,62 @@
             font-size: 22px;
         }
     }
+    // PROMOS
+    @media (max-width: 320px) {
+        .imagenes-promos{
+            grid-template-columns: auto;
+            
+            .parr-promos{
+                display: block;
+                text-decoration: underline;
+                font-weight: bold;
+                
+            }
+        }
+        .font-promo{
+            font-size: 22px;
+            margin-top: 50px;
+        }
+        .font-promo2{
+            font-size: 18px;
+        }
+        .color-boton{
+            background: linear-gradient(#3c2a21e1, #63524ae1); 
+        }
+        .promo{
+            width: 100px;
+            height: 75px;
+        }
+    }
+    @media (min-width: 321px) and (max-width: 500px){
+        .imagenes-promos{
+            grid-template-columns: auto;
+            
+            .parr-promos{
+                display: block;
+                text-decoration: underline;
+                font-weight: bold;
+                
+            }
+        }
+        .font-promo{
+            font-size: 26px;
+            margin-top: 50px;
+        }
+        .font-promo2{
+            font-size: 22px;
+        }
+        .color-boton{
+            background: linear-gradient(#3c2a21e1, #63524ae1); 
+        }
+        .promo{
+            width: 100px;
+            height: 100px;
+        }
+        .texto-promo1{
+            font-size: 22;
+        }
+        .texto-promo2{
+            font-size: 18;
+        }
+    }

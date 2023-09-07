@@ -64,7 +64,7 @@ header nav ul{
 }
 
                     /* PAGINA DE HOME */
-.container-index{
+.container-todos{
     width: 90%;
     margin: auto;
 }
@@ -236,7 +236,7 @@ hr.black-line2{
 
 
                                        /* PAGINA DE PRODUCTOS */
-#tit{
+.tit{
     text-decoration: underline;
     font-size: 30px;
     margin-top: 20px;
@@ -350,13 +350,13 @@ div .texto-secundario{
 }
 
 .promo {
+    @include flex;
     width: 100px;
     height: 100px;
     background: linear-gradient(#3c2a21e1, #63524ae1); 
     border: 1px solid #1A120B;  
     border-radius: 10px; 
-    margin: 10px;
-    @include flex; 
+    margin: 10px; 
     font-weight: bold;
     font-size: 16px;
     color: #1A120B;  
@@ -364,21 +364,27 @@ div .texto-secundario{
 .fondopromo{
     background-color: #D5CEA3;
 }
-.menupromo{
-    margin-left: 67%;
-    margin-top: 1%;
-    display: inline-block;
-    background-color: #E5E5CB;  
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid #1A120B; 
-    font-weight: bold;
-}
 hr.black-line {
     border-color: black;
     width: 80%;
     margin-left: 129px;
-  }
+}
+.imagenes-promos{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+
+    img{
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .parr-promos{
+        display: none;
+    }
+}
+
 
 
 
@@ -392,42 +398,51 @@ hr.black-line {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    
+    .nos2{
+        color: $color-blanco;
+        font-size: 17px;
+        background-color: rgba(139, 69, 19, 1); 
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px black; 
+    }
 }
 .container{
     margin-bottom: 20px;
+    .btn-marron {
+        background: linear-gradient(to bottom, #613613, #8B4513); 
+        color: $color-blanco; 
+        border: solid 1px black; 
+        text-decoration: none; 
+        padding: 10px 20px;
+        border-radius: 5px; 
+    }
 }
 .color-nos{
     background-image: url(../multimedia/Clinchi.jpg);
 }
-.nos2{
-    color: $color-blanco;
-    font-size: 17px;
-    background-color: rgba(139, 69, 19, 1); 
-    padding: 10px;
-    border-radius: 10px;
-    border: solid 1px black;
-    
-}
 
-.btn-marron {
-    background: linear-gradient(to bottom, #613613, #8B4513); 
-    color: $color-blanco; 
-    border: solid 1px black; 
-    text-decoration: none; 
-    padding: 10px 20px;
-    border-radius: 5px; 
-}
+
 .degrade-nos{
     background: linear-gradient( rgba(139, 69, 19, 1), rgb(214, 195, 182));
 }
-.carousel2{
-    width: 250px;
-    height: 250px;
-    padding: 5px;
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
-.flex2{
-    
+
+/* Animación de deslizamiento desde la izquierda */
+.animate__slideInLeft {
+    animation-name: slideInLeft;
+    animation-delay: 0.5s;
 }
+
+/* Animación de deslizamiento desde la derecha */
+.animate__slideInRight {
+    animation-name: slideInRight;
+    animation-delay: 0.5s;
+}
+
+
 
 @import "./utils/media";
