@@ -1,14 +1,32 @@
-// mixin
-
-
-// mixin con parametros
-
-
-
-// mixin sin parametros
-
 @mixin flex{
     display: flex;
     justify-content: center;
     align-items: center;
+}@mixin parrafos{
+    font-size: 16px;
+    color: #362706;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+@mixin redes{
+    position: fixed;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 60px;
+    height: 60px;
+    right: 20px;
+}
+@mixin redes-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+@mixin titulos-productos{
+    text-align: center;
+    color: $color-blanco;
+    margin-top: 20px;
 }
