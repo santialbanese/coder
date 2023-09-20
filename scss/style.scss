@@ -109,6 +109,7 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+   
 }
 .parrafo{
     font-size: 20px;
@@ -124,7 +125,6 @@ a:hover {
 .parrafo2, .parrafo3{
     @include parrafos;
 }
-
 
 
 hr.black-line2{
@@ -218,15 +218,13 @@ hr.black-line2{
 
 
 .padre-productos{
-    width: 80%;
-    margin: 0 auto;
+    @include productos(80%, auto auto, center);
     display: grid;
-    grid-template-columns: auto auto;
+    margin: 0 auto;
     grid-template-rows: auto auto;
     background-color: $color-blanco;
-    border: $borde;
-    justify-items: center; 
     align-items: center;
+    border: $borde;
     border-radius: 5px;
 }
 

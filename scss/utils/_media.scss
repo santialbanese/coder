@@ -409,10 +409,8 @@
 /* PRODUCTOS */
 @media (min-width: 321px) and (max-width: 500px) {
     .padre-productos{
-      width: 90%;
-      grid-template-columns: auto;
+        @include productos(90%, auto, flex-start);
       row-gap: 1rem; 
-      justify-items: flex-start;
       padding: 5px;
     }
   
@@ -510,7 +508,6 @@
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
           background-color: $color-blanco;
-        
           justify-items: center;
           align-items: center;
           border-radius: 5px;

@@ -30,3 +30,10 @@
     color: $color-blanco;
     margin-top: 20px;
 }
+@mixin productos($width, $columnas, $justify){
+    width: $width;
+    grid-template-columns: $columnas;
+    background-color: $color-blanco;
+    justify-items: $justify; 
+    border-radius: 5px;
+}
