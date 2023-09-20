@@ -51,37 +51,38 @@ header nav ul{
     display: flex;
     gap: 1rem;
 }
-.logo-mp{
-    max-width: 300px; 
-    height: auto;
-}
 .footer-estilos{
     display: grid;
     grid-template-columns: auto auto;
     place-items: center;
     padding: 15px;
-}
-.container-todos{
-    width: 90%;
-    margin: auto;
+    .logo-mp{
+        max-width: 300px; 
+        height: auto;
+    }
 }
 a:hover {
     color: $color-negro;
     text-decoration: underline;
   }
-  
+  .container-todos{
+    width: 90%;
+    margin: auto;
+    
+}
 
 
                     /* PAGINA DE HOME */
 .fondo{
-    background-color: #CEAB98;
+    background-color: #CEAB98; 
+    .color-home{
+        background-image: url(../multimedia/home.jpg)
+    }
 }
 .agrando-p-index{
     font-size: 14px;
 }
-.color-home{
-    background-image: url(../multimedia/home.jpg)
-}
+
 
 .color-menu-home{
     color: #362706;
@@ -102,28 +103,27 @@ a:hover {
         height: 100%;
         padding: 20px;
     }
-}
-.texto {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-   
-}
-.parrafo{
-    font-size: 20px;
-    color: $color-blanco;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 6px;
-    border-radius: 10px;
-    border: $borde;
-    font-weight: 500;
-    z-index: 1000;
-
-}
-.parrafo2, .parrafo3{
-    @include parrafos;
+    .texto {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .parrafo{
+            font-size: 20px;
+            color: $color-blanco;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 6px;
+            border-radius: 10px;
+            border: $borde;
+            font-weight: 500;
+            z-index: 1000;
+        
+        }
+    }
+    .parrafo2, .parrafo3{
+        @include parrafos;
+    }
 }
 
 
@@ -167,23 +167,48 @@ hr.black-line2{
 
 
                     /* PAGINA DE CONTACTO */
-.color-cont{
-    background-image: url(../multimedia/z1.jpg);
+.text-cont{
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 10px;
 }
-
 .color-todo-cont{
-    background-color: #FAEAB1;
+    background-color: #362706; 
 }
 .tit-cont{
     font-weight: bold;
     text-decoration: underline;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.tit2-cont{
+    font-weight: 500;
+    color: white;
+    text-align: center;
 }
 .margin-cont{
     margin-bottom: 20px;
+    color: white;
 }
-
-
-
+.cont-todo{
+    border: $borde;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #9e9e9e73;
+    .margin-cont{
+        margin-bottom: 20px;
+        color: white;
+    }
+}
+.fondo-tit3{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 7px;
+    .tit3-cont{
+        color: white;
+        text-align: center;
+    }
+}
 
 
 
@@ -211,50 +236,37 @@ hr.black-line2{
     width: 150px;
     height: 150px;
 }
-.todos_titulos{
-    font-weight: 600;
-    text-decoration: underline;
-}
 
 
-.padre-productos{
-    @include productos(80%, auto auto, center);
-    display: grid;
-    margin: 0 auto;
-    grid-template-rows: auto auto;
-    background-color: $color-blanco;
-    align-items: center;
-    border: $borde;
-    border-radius: 5px;
-}
-
-.divs{
-    margin: 10px; 
-}
-
-.divs-doble{
-    grid-column: span 2;
-    text-align: center;
-}
-
-.divs img{
-    width: 90px;
-    height: 90px;
-    margin-left: 20px;
-}
 .father{
     display: grid;
     row-gap: 0.5rem;
-}
-.tit-bombones{
-    margin-top: 10px;
-    color: $color-blanco;
-    text-decoration: overline;
-}
-
-
-.texto-corrido{
-    margin-left: 10px;
+    .padre-productos{
+        @include productos(80%, auto auto, center);
+        display: grid;
+        margin: 0 auto;
+        grid-template-rows: auto auto;
+        background-color: $color-blanco;
+        align-items: center;
+        border: $borde;
+        border-radius: 5px;
+        .divs{
+            margin: 10px; 
+            .texto-corrido{
+                margin-left: 10px;
+            }
+            img{
+                width: 90px;
+                height: 90px;
+                margin-left: 20px;
+            }
+        }
+    }
+    .tit-bombones{
+        margin-top: 10px;
+        color: $color-blanco;
+        text-decoration: overline;
+    }
 }
 div .texto-secundario{
     display: none;

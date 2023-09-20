@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- link de BT -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- estilos CSS -->
+    <!-- link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../multimedia/FONDO2.jpg" type="image/x-icon">
+    <!-- link de ANIMACIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- link AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="color-todo-cont">
-    <header class="navbar navbar-expand-lg bg-body-tertiary color-cont">
+    <header class="navbar navbar-expand-lg bg-body-tertiary promo-body">
         <div class="container-fluid">
             <img src="../multimedia/logo2png.png" class="img2" alt="">
           <a class="navbar-brand" href="#"></a>
@@ -44,42 +46,46 @@
           </div>
         </div>
     </header> 
-
     <div class="container-todos">
-      <section class="p-2 fs-6">
+
+      <main>
         <p class="tit-cont">CONTACTATE!</p>
-        <p class="tit2-cont">Ante cualquier consulta te podés comunicar con nosotros y te responderemos a la brevedad. ¡Lo esperamos!</p>
-        <hr>
-    </section>
+        <p class="tit2-cont">Te podés comunicar con nosotros y te responderemos a la brevedad. ¡Te esperamos!</p>
+        <div class="fondo-tit3">
+          <p class="tit3-cont animate__animated animate__slideInLeft">Hacemos envios en La Plata y alrededores:</p>
+          <p class="tit3-cont animate__animated animate__slideInLeft">(Gonnet, City Bell, Villa Elisa, Berisso, Ensenada, Los Hornos, Olmos)</p>
+        </div>
+      </main>
+      <hr>
 
     
-    <section class="p-2 agrandar-cont">
+      <section class="p-2 agrandar-cont">
 
-        <form class="fs-6"> 
-            <ol>   <!-- ordenada -->
+        <form class="fs-6 cont-todo"> 
+            <ul>   <!-- ordenada -->
                
-              <li class="p-2 margin-cont fw-bold"><label for="nombre">Escribi tu nombre:</label><input type="text" required name="nombre"></li> 
+              <li class="p-2 margin-cont "><label for="nombre">Escribi tu nombre:</label><input type="text" required name="nombre"></li> 
 
-                <li  class="p-2 margin-cont fw-bold">
+                <li  class="p-2 margin-cont ">
                     <label for="sexo">Elegi tu sexo:</label>
                     <input type="radio" name="sexo" value="F"> Femenino
                     <input type="radio" name="sexo" value="M"> Masculino
                     <input type="radio" name="sexo" value="PN"> prefiero no especificar
                 </li>
 
-                <li class="p-2 margin-cont fw-bold">
+                <li class="p-2 margin-cont ">
                     <label for="mail">Ingresa tu mail:</label><input type="email" required name="mail">
                 </li>
             
-                <li class="p-2 margin-cont fw-bold">
+                <li class="p-2 margin-cont ">
                     <label for="mensaje">Mandanos tu mensaje!(opcional)</label><textarea name="mensaje" cols="28" rows="2"></textarea>
                 </li>
             
-                <li class="p-2 margin-cont fw-bold">
+                <li class="p-2 margin-cont ">
                     <label for="terminos">Acepta terminos y condiciones?</label><input class="boton-cont" type="checkbox" name="terminos">
                 </li>
             
-                <li class="p-2 margin-cont fw-bold">
+                <li class="p-2 margin-cont ">
                     <!-- menu desplegable -->
                     <label for="pais">De que pais sos?</label>
                     <select name="pais">
@@ -91,16 +97,16 @@
                     </select>
                 </li>
             
-                <li class="p-2 margin-cont fw-bold">
+                <li class="p-2 margin-cont ">
                     <fieldset>
                         <p>Datos de envio:</p>
 
-                        <label class="p-2" for="direccion">ingresa tu direccion</label>
+                        <label class="p-2" for="direccion">Ingresa tu direccion:</label>
                         <input type="direccion">
                     </fieldset>
                 </li>
                 
-            </ol>
+            </ul>
 
             <br>
 
@@ -109,7 +115,15 @@
             <input type="submit">
             </div>      
         </form>
-    </section>
+      </section>
+    </div>
+    <div>
+      <a href="https://wa.me/2215389720" class="whatsapp-icono" target="_blank" rel="noopener noreferrer">
+          <img src="../multimedia/logowsp.webp" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com/santialbanese_/" class="instagram-icono" target="_blank" rel="noopener noreferrer">
+          <img src="../multimedia/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415_795.png" alt="instagram">
+      </a>
     </div>
     <footer class="bg-black footer-estilos p2">
         <!-- pie de pagina -->
