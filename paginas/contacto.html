@@ -20,7 +20,9 @@
 <body class="color-todo-cont">
     <header class="navbar navbar-expand-lg bg-body-tertiary promo-body">
         <div class="container-fluid">
-            <img src="../multimedia/logo2png.png" class="img2" alt="">
+          <a href="../index.html">
+            <img src="../multimedia/logo2png.png" class="img2" alt="imagen de bombón">
+          </a>
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,48 +64,43 @@
       <section class="p-2 agrandar-cont">
 
         <form class="fs-6 cont-todo"> 
-            <ul>   <!-- ordenada -->
+            <ul>   
                
-              <li class="p-2 margin-cont "><label for="nombre">Escribi tu nombre:</label><input type="text" required name="nombre"></li> 
+              <li class="p-2 margin-cont "><label for="nombre">Escribí tu nombre:</label><input type="text" required name="nombre"></li> 
 
                 <li  class="p-2 margin-cont ">
-                    <label for="sexo">Elegi tu sexo:</label>
+                    <label for="sexo">Elegí tu sexo:</label>
                     <input type="radio" name="sexo" value="F"> Femenino
                     <input type="radio" name="sexo" value="M"> Masculino
                     <input type="radio" name="sexo" value="PN"> prefiero no especificar
                 </li>
 
                 <li class="p-2 margin-cont ">
-                    <label for="mail">Ingresa tu mail:</label><input type="email" required name="mail">
+                    <label for="mail">Ingresá tu mail:</label><input type="email" required name="mail">
                 </li>
             
                 <li class="p-2 margin-cont ">
-                    <label for="mensaje">Mandanos tu mensaje!(opcional)</label><textarea name="mensaje" cols="28" rows="2"></textarea>
+                    <label for="mensaje">Mandanos tu mensaje!(opcional)</label><textarea name="mensaje" cols="20" rows="2"></textarea>
                 </li>
             
                 <li class="p-2 margin-cont ">
                     <label for="terminos">Acepta terminos y condiciones?</label><input class="boton-cont" type="checkbox" name="terminos">
                 </li>
-            
+                
                 <li class="p-2 margin-cont ">
-                    <!-- menu desplegable -->
-                    <label for="pais">De que pais sos?</label>
-                    <select name="pais">
-                        <option value="ARG">Argentina</option>
-                        <option value="URU">Uruguay</option>
-                        <option value="BR">Brasil</option>
-                        <option value="COL">Colombia</option>
-                        <option value="PER">Perú</option>
-                    </select>
-                </li>
+                  <label for="mensaje">Cual es tu pedido?</label><textarea name="mensaje" cols="20" rows="2"></textarea>
+              </li>
+                
             
-                <li class="p-2 margin-cont ">
+                <li class="p-2 margin-cont">
                     <fieldset>
                         <p>Datos de envio:</p>
 
-                        <label class="p-2" for="direccion">Ingresa tu direccion:</label>
+                        <label class="p-2" for="direccion">Ingresá tu dirección:</label>
                         <input type="direccion">
                     </fieldset>
+                    <label class="p-2" for="algún otro dato">Algún otro dato que quieras agregar:</label>
+                        <input type="algún otro dato">
                 </li>
                 
             </ul>

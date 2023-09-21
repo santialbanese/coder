@@ -3,6 +3,7 @@
   background: linear-gradient(to bottom, #613613, #8B4513);
   color: white;
   border: 1px solid black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px; }
@@ -96,6 +97,7 @@ a:hover {
       font-size: 20px;
       color: white;
       background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
       padding: 6px;
       border-radius: 10px;
       border: 1px solid black;
@@ -105,6 +107,7 @@ a:hover {
     font-size: 16px;
     color: #362706;
     background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
     padding: 10px;
     border-radius: 10px;
     border: solid 1px black; }
@@ -183,6 +186,7 @@ hr.black-line2 {
 .cont-todo {
   border: 1px solid black;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   padding: 10px;
   background-color: #9e9e9e73; }
   .cont-todo .margin-cont {
@@ -191,6 +195,7 @@ hr.black-line2 {
 
 .fondo-tit3 {
   background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 7px; }
   .fondo-tit3 .tit3-cont {
@@ -277,40 +282,39 @@ div .texto-secundario {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   justify-content: space-evenly; }
-
-.promo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(#3c2a21e1, #63524ae1);
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  color: black; }
-
-hr.black-line {
-  border-color: black;
-  width: 80%;
-  margin-left: 129px; }
+  .promos .promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#3c2a21e1, #63524ae1);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: black; }
 
 .imagenes-promos {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center; }
   .imagenes-promos img {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     margin-top: 20px; }
-  .imagenes-promos .parr-promos {
+  .imagenes-promos .img-promos-grid .parr-promos {
     display: none; }
 
 .texto-promo1 {
   margin-top: 20px; }
+
+hr.black-line {
+  border-color: black;
+  width: 80%;
+  margin-left: 129px; }
 
 /* CODIGO DE "NOSOTROS" */
 .textos-nosotros {
@@ -363,15 +367,15 @@ hr.black-line {
     padding: 8px; }
   .footer-estilos {
     grid-template-columns: 1fr;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     padding: 20px; }
     .footer-estilos .logo-mp {
-      max-width: 200px; }
+      max-width: 100px; }
   footer {
     min-height: 100px; }
   h6 {
-    font-size: 14px; }
+    font-size: 12px; }
   .whatsapp-icono {
     width: 50px;
     height: 50px;
@@ -419,14 +423,14 @@ hr.black-line {
     font-size: 1rem; }
   .footer-estilos {
     grid-template-columns: auto;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center; }
     .footer-estilos .logo-mp {
-      max-width: 215px; }
+      max-width: 150px; }
   footer {
     min-height: 100px; }
   h6 {
-    font-size: 16px; } }
+    font-size: 13px; } }
 
 @media (min-width: 501px) and (max-width: 700px) {
   .whatsapp-icono {
@@ -457,9 +461,19 @@ hr.black-line {
     font-size: 17px;
     font-weight: 600; }
     .visita a {
-      font-weight: 400; } }
+      font-weight: 400; }
+  .footer-estilos {
+    grid-template-columns: auto;
+    font-size: 15px;
+    text-align: center; }
+    .footer-estilos .logo-mp {
+      max-width: 200px; }
+  footer {
+    min-height: 100px; }
+  h6 {
+    font-size: 15px; } }
 
-@media (min-width: 501px) and (max-width: 700px) and (min-width: 702px) and (max-width: 898px) {
+@media (min-width: 702px) and (max-width: 898px) {
   .container-fluid img {
     height: 170px;
     width: 170px; }
@@ -820,7 +834,7 @@ hr.black-line {
 @media (max-width: 320px) {
   .imagenes-promos {
     grid-template-columns: auto; }
-    .imagenes-promos .parr-promos {
+    .imagenes-promos .img-promos-grid .parr-promos {
       display: block;
       text-decoration: underline;
       font-weight: bold; }
@@ -831,17 +845,11 @@ hr.black-line {
     font-size: 18px; }
   .color-boton {
     background: linear-gradient(#3c2a21e1, #63524ae1); }
-  .promo {
+  .promos .promo {
     width: 100px;
     height: 75px; } }
 
 @media (min-width: 321px) and (max-width: 500px) {
-  .imagenes-promos {
-    grid-template-columns: auto; }
-    .imagenes-promos .parr-promos {
-      display: block;
-      text-decoration: underline;
-      font-weight: bold; }
   .font-promo {
     font-size: 26px;
     margin-top: 50px; }
@@ -849,21 +857,21 @@ hr.black-line {
     font-size: 22px; }
   .color-boton {
     background: linear-gradient(#3c2a21e1, #63524ae1); }
-  .promo {
+  .promos .promo {
     width: 100px;
     height: 100px; }
   .texto-promo1 {
     font-size: 22; }
+  .imagenes-promos {
+    grid-template-columns: auto; }
+    .imagenes-promos .img-promos-grid .parr-promos {
+      display: block;
+      text-decoration: underline;
+      font-weight: bold; }
   .texto-promo2 {
     font-size: 18; } }
 
 @media (min-width: 501px) and (max-width: 700px) {
-  .imagenes-promos {
-    grid-template-columns: auto; }
-    .imagenes-promos .parr-promos {
-      display: block;
-      text-decoration: underline;
-      font-weight: bold; }
   .color-boton {
     background: linear-gradient(#3c2a21e1, #63524ae1); }
   .font-promo {
@@ -871,22 +879,23 @@ hr.black-line {
     margin-top: 50px; }
   .font-promo2 {
     font-size: 25px; }
-  .promo {
+  .promos .promo {
     width: 110px;
     height: 110px;
     font-size: 20px; }
+  .imagenes-promos .img-promos-grid {
+    grid-template-columns: auto auto;
+    margin: 0 10px; }
+    .imagenes-promos .img-promos-grid .parr-promos {
+      display: block;
+      text-decoration: underline;
+      font-weight: bold; }
   .texto-promo1 {
     font-size: 24; }
   .texto-promo2 {
     font-size: 20; } }
 
 @media (min-width: 701px) and (max-width: 900px) {
-  .imagenes-promos {
-    grid-template-columns: auto; }
-    .imagenes-promos .parr-promos {
-      display: block;
-      text-decoration: underline;
-      font-weight: bold; }
   .color-boton {
     background: linear-gradient(#3c2a21e1, #63524ae1); }
   .font-promo {
@@ -894,22 +903,25 @@ hr.black-line {
     margin-top: 50px; }
   .font-promo2 {
     font-size: 28px; }
-  .promo {
+  .promos .promo {
     width: 120px;
     height: 120px;
     font-size: 22px; }
+  .imagenes-promos {
+    grid-template-columns: auto auto auto; }
+    .imagenes-promos .img-promos-grid {
+      grid-template-columns: auto auto;
+      margin: 0 30px; }
+      .imagenes-promos .img-promos-grid .parr-promos {
+        display: block;
+        text-decoration: underline;
+        font-weight: bold; }
   .texto-promo1 {
     font-size: 26; }
   .texto-promo2 {
     font-size: 22; } }
 
 @media (min-width: 900px) and (max-width: 1199px) {
-  .imagenes-promos {
-    grid-template-columns: auto; }
-    .imagenes-promos .parr-promos {
-      display: block;
-      text-decoration: underline;
-      font-weight: bold; }
   .color-boton {
     background: linear-gradient(#3c2a21e1, #63524ae1); }
   .font-promo {
@@ -917,22 +929,25 @@ hr.black-line {
     margin-top: 50px; }
   .font-promo2 {
     font-size: 28px; }
-  .promo {
+  .promos .promo {
     width: 130px;
     height: 130px;
     font-size: 24px; }
+  .imagenes-promos {
+    grid-template-columns: auto auto auto; }
+    .imagenes-promos .img-promos-grid {
+      grid-template-columns: auto auto auto;
+      margin: 0 50px; }
+      .imagenes-promos .img-promos-grid .parr-promos {
+        display: block;
+        text-decoration: underline;
+        font-weight: bold; }
   .texto-promo1 {
     font-size: 28; }
   .texto-promo2 {
     font-size: 24; } }
 
 @media (min-width: 1200px) {
-  .imagenes-promos {
-    grid-template-columns: auto; }
-    .imagenes-promos .parr-promos {
-      display: block;
-      text-decoration: underline;
-      font-weight: bold; }
   .color-boton {
     background: linear-gradient(#3c2a21e1, #63524ae1); }
   .font-promo {
@@ -940,10 +955,19 @@ hr.black-line {
     margin-top: 50px; }
   .font-promo2 {
     font-size: 29px; }
-  .promo {
+  .promos .promo {
     width: 140px;
     height: 140px;
     font-size: 25px; }
+  .imagenes-promos {
+    grid-template-columns: auto auto auto auto; }
+    .imagenes-promos .img-promos-grid {
+      grid-template-columns: auto auto auto auto;
+      margin: 0 40px; }
+      .imagenes-promos .img-promos-grid .parr-promos {
+        display: block;
+        text-decoration: underline;
+        font-weight: bold; }
   .texto-promo1 {
     font-size: 28; }
   .texto-promo2 {
