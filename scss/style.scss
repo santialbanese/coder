@@ -81,8 +81,25 @@ a:hover {
 .agrando-p-index{
     font-size: 14px;
 }
-
-
+.index-todo{
+    border: $borde;
+    border-radius: 8px;
+    box-shadow: $sombreado;
+    padding: 10px;
+    background-color: #362706ea;
+    animation: animacionAgranda2 2s infinite;
+    .margin-index{
+        margin-bottom: 20px;
+        color: white;
+    }
+}
+.parr-nosotros{
+    border: $borde;
+    border-radius: 8px;
+    box-shadow: $sombreado;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 .color-menu-home{
     color: #362706;
     text-decoration: underline;
@@ -376,15 +393,17 @@ hr.black-line {
         animation: colorNos 5s infinite;
      }
     .grid-nos{
-        .clase-imgenes{
+        .clase-imagenes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img{
-                
             }
         }
-        .nos2{
+        .nos1, .nos2, .nos3, .nos4 {
             color: $color-blanco;
             font-size: 17px;
-            background-color: #38291d9f; 
+            background-color: #2c2017d2; 
             box-shadow: $sombreado;
             padding: 10px;
             border-radius: 10px;
@@ -395,6 +414,9 @@ hr.black-line {
 }
 .container{
     margin-bottom: 20px;
+    .text-nos{
+        padding: 10px;
+    }
     .btn-marron {
         @extend %boton; 
         margin-left: 24px;
@@ -407,7 +429,6 @@ hr.black-line {
 .color-todo-nos{
     background: $gradient-promo;
 }
-
 .degrade-nos{
     background: linear-gradient( $prod-body, $color-negro);
 }

@@ -37,7 +37,11 @@
       h6{
         font-size: 12px;
       }
-    
+      .index-todo{
+        .margin-index{
+            font-size: 14px;
+        }
+      }
     
     .whatsapp-icono {
         width: 50px; 
@@ -67,6 +71,11 @@
         bottom: 70px;
         z-index: 1000;
     }
+    .index-todo{
+        .margin-index{
+            font-size: 14px;
+        }
+      }
     .container-fluid img{
         height: 90px;
         width: 90px;  
@@ -130,6 +139,11 @@
         bottom: 70px;
         z-index: 1000;
     }
+    .index-todo{
+        .margin-index{
+            font-size: 17px;
+        }
+      }
     .cont{
         .texto{
             top: 22%;
@@ -191,7 +205,11 @@
         bottom: 90px;
         z-index: 1000;
     }
-    
+    .index-todo{
+        .margin-index{
+            font-size: 19px;
+        }
+      }
     .cont{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -247,7 +265,11 @@
         bottom: 90px;
         z-index: 1000;
     }
-    
+    .index-todo{
+        .margin-index{
+            font-size: 22px;
+        }
+      }
     .cont{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -312,6 +334,11 @@
         bottom: 105px;
         z-index: 1000;
     }
+    .index-todo{
+        .margin-index{
+            font-size: 23px;
+        }
+      }
     .agrando2 img {
         padding: 10px; 
     }
@@ -913,21 +940,21 @@
         .textos-nosotros{
             .grid-nos{
                 .clase-imagenes{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     img{
                         width: 100px;
                         height: 100px;
-                        margin-bottom: 10px;
-                        margin-left: 5px;
-                        margin-right: 5px;
+                        margin: 0px 3px 10px 3px;
                         border: $borde;
                     }
                 }
             }
-            .nos2{
+            .nos1, .nos2, .nos3, .nos4{
                 font-size: 17px;
+            }
+        }
+        .container{
+            .text-nos{
+                font-size: 15px;
             }
         }
     }
@@ -935,21 +962,25 @@
         .textos-nosotros{
             .grid-nos{
                 .clase-imagenes{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     img{
-                        width: 150px;
-                        height: 150px;
-                        margin-bottom: 15px;
-                        margin-left: 5px;
-                        margin-right: 5px;
+                        width: 140px;
+                        height: 140px;
+                        margin: 0px 10px 15px 10px;
                         border: $borde;
                     }
                 }
-                .nos2{
+                .nos1, .nos2, .nos3, .nos4{
                     font-size: 20px;
                 }
+                .nos2{
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            }
+        }
+        .container{
+            .text-nos{
+                font-size: 18px;
             }
         }
     }
@@ -961,13 +992,84 @@
                     img{
                         width: 200px;
                         height: 200px;
-                        margin-bottom: 20px;
+                        margin: 0px 10px 20px 10px;
                         border: $borde;
                     }
                 }
-                .nos2{
+                .nos1, .nos2, .nos3, .nos4{
                     font-size: 22px;
                 }
+                .nos2{
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            }
+        }
+        .container{
+            .text-nos{
+                font-size: 22px;
+            }
+        }
+    }
+    @media (min-width: 901px) and (max-width: 1999px){
+        .textos-nosotros{
+            .grid-nos{
+                margin-bottom: 30px;
+                .clase-imagenes{
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        margin: 0px 15px 20px 15px;
+                        border: $borde;
+                    }
+                }
+                .nos1, .nos2, .nos3, .nos4{
+                    font-size: 26px;
+                }
+                .nos3{
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                .nos2{
+                    margin-left: 140px;
+                    margin-right: 140px;
+                }
+            }
+        }
+        .container{
+            .text-nos{
+                font-size: 24px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        .textos-nosotros{
+            .grid-nos{
+                margin-bottom: 30px;
+                .clase-imagenes{
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        margin-bottom: 25px;
+                        border: $borde;
+                    }
+                }
+                .nos1, .nos2, .nos3, .nos4{
+                    font-size: 26px;
+                }
+                .nos2{
+                    margin-left: 200px;
+                    margin-right: 200px;
+                }
+                .nos3{
+                    margin-left: 100px;
+                    margin-right: 100px;
+                }
+            }
+        }
+        .container{
+            .text-nos{
+                font-size: 24px;
             }
         }
     }
