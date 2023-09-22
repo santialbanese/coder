@@ -9,17 +9,25 @@
         font-size: 0.8rem;
     }
 
-    .cont img {
-        padding: 10px; 
-    }
-    
-    .texto {
-        top: 20%;
-    }
-    
-    .parrafo, .parrafo2, .parrafo3 {
-        font-size: 14px; 
-        padding: 8px; 
+    .cont{
+        img {
+            padding: 10px; 
+        }
+        .texto {
+            top: 30%;
+            .parrafo{
+                font-size: 12px; 
+                padding: 8px;
+            }
+        }
+        .parrafo2, .parrafo3 {
+            font-size: 12px; 
+            padding: 8px; 
+        }
+    } 
+    .escribir{
+        height: 20px;
+        width: 100px;
     }
     
     .footer-estilos {
@@ -406,6 +414,7 @@
             row-gap: 1rem; 
             padding: 5px;
             .divs{
+                margin: 10px 0;
                 .texto-corrido {
                     margin-left: 5px; 
                 }
@@ -497,7 +506,7 @@
   
   }
   
-/* PRODUCTOS */
+/* PRODUCTOSS */
 
 
 
@@ -746,8 +755,8 @@
         }
         .promos{
             .promo{
-                width: 100px;
-                height: 75px;
+                width: 87px;
+                height: 72px;
             }
         }
     }
@@ -936,6 +945,27 @@
         }
     }
     //NOSOTROS
+    @media (max-width: 320px) {
+        .textos-nosotros{
+            .grid-nos{
+                .clase-imagenes{
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        margin: 0px 0px 10px 0px;
+                    }
+                }
+            }
+            .nos1, .nos2, .nos3, .nos4{
+                font-size: 15px;
+            }
+        }
+        .container{
+            .text-nos{
+                font-size: 14px;
+            }
+        }
+    }
     @media (min-width: 321px) and (max-width: 500px){
         .textos-nosotros{
             .grid-nos{
@@ -944,7 +974,6 @@
                         width: 100px;
                         height: 100px;
                         margin: 0px 3px 10px 3px;
-                        border: $borde;
                     }
                 }
             }
@@ -966,7 +995,6 @@
                         width: 140px;
                         height: 140px;
                         margin: 0px 10px 15px 10px;
-                        border: $borde;
                     }
                 }
                 .nos1, .nos2, .nos3, .nos4{
@@ -993,7 +1021,6 @@
                         width: 200px;
                         height: 200px;
                         margin: 0px 10px 20px 10px;
-                        border: $borde;
                     }
                 }
                 .nos1, .nos2, .nos3, .nos4{
@@ -1020,7 +1047,6 @@
                         width: 250px;
                         height: 250px;
                         margin: 0px 15px 20px 15px;
-                        border: $borde;
                     }
                 }
                 .nos1, .nos2, .nos3, .nos4{
@@ -1051,7 +1077,6 @@
                         width: 300px;
                         height: 300px;
                         margin-bottom: 25px;
-                        border: $borde;
                     }
                 }
                 .nos1, .nos2, .nos3, .nos4{

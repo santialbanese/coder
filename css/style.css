@@ -391,6 +391,8 @@ hr.black-line {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .textos-nosotros .grid-nos .clase-imagenes img {
+      border: 1px solid black; }
   .textos-nosotros .grid-nos .nos1, .textos-nosotros .grid-nos .nos2, .textos-nosotros .grid-nos .nos3, .textos-nosotros .grid-nos .nos4 {
     color: white;
     font-size: 17px;
@@ -437,11 +439,17 @@ hr.black-line {
     font-size: 0.8rem; }
   .cont img {
     padding: 10px; }
-  .texto {
-    top: 20%; }
-  .parrafo, .parrafo2, .parrafo3 {
-    font-size: 14px;
+  .cont .texto {
+    top: 30%; }
+    .cont .texto .parrafo {
+      font-size: 12px;
+      padding: 8px; }
+  .cont .parrafo2, .cont .parrafo3 {
+    font-size: 12px;
     padding: 8px; }
+  .escribir {
+    height: 20px;
+    width: 100px; }
   .footer-estilos {
     grid-template-columns: 1fr;
     font-size: 12px;
@@ -715,11 +723,13 @@ hr.black-line {
     border-radius: 5px;
     row-gap: 1rem;
     padding: 5px; }
-    .father .padre-productos .divs .texto-corrido {
-      margin-left: 5px; }
-    .father .padre-productos .divs img {
-      width: 60px;
-      height: 60px; }
+    .father .padre-productos .divs {
+      margin: 10px 0; }
+      .father .padre-productos .divs .texto-corrido {
+        margin-left: 5px; }
+      .father .padre-productos .divs img {
+        width: 60px;
+        height: 60px; }
   .father .tit-bombones {
     padding: 10px;
     font-size: 18px; }
@@ -774,7 +784,7 @@ hr.black-line {
     text-decoration: underline;
     font-weight: bold; } }
 
-/* PRODUCTOS */
+/* PRODUCTOSS */
 @media (min-width: 768px) {
   /* PRODUCTOS */
   .father .padre-productos .divs img {
@@ -934,8 +944,8 @@ hr.black-line {
   .color-boton {
     background: linear-gradient(#3c2a21e1, #63524ae1); }
   .promos .promo {
-    width: 100px;
-    height: 75px; } }
+    width: 87px;
+    height: 72px; } }
 
 @media (min-width: 321px) and (max-width: 500px) {
   .font-promo {
@@ -1056,12 +1066,21 @@ hr.black-line {
   .texto-promo2 {
     font-size: 24; } }
 
+@media (max-width: 320px) {
+  .textos-nosotros .grid-nos .clase-imagenes img {
+    width: 80px;
+    height: 80px;
+    margin: 0px 0px 10px 0px; }
+  .textos-nosotros .nos1, .textos-nosotros .nos2, .textos-nosotros .nos3, .textos-nosotros .nos4 {
+    font-size: 15px; }
+  .container .text-nos {
+    font-size: 14px; } }
+
 @media (min-width: 321px) and (max-width: 500px) {
   .textos-nosotros .grid-nos .clase-imagenes img {
     width: 100px;
     height: 100px;
-    margin: 0px 3px 10px 3px;
-    border: 1px solid black; }
+    margin: 0px 3px 10px 3px; }
   .textos-nosotros .nos1, .textos-nosotros .nos2, .textos-nosotros .nos3, .textos-nosotros .nos4 {
     font-size: 17px; }
   .container .text-nos {
@@ -1071,8 +1090,7 @@ hr.black-line {
   .textos-nosotros .grid-nos .clase-imagenes img {
     width: 140px;
     height: 140px;
-    margin: 0px 10px 15px 10px;
-    border: 1px solid black; }
+    margin: 0px 10px 15px 10px; }
   .textos-nosotros .grid-nos .nos1, .textos-nosotros .grid-nos .nos2, .textos-nosotros .grid-nos .nos3, .textos-nosotros .grid-nos .nos4 {
     font-size: 20px; }
   .textos-nosotros .grid-nos .nos2 {
@@ -1087,8 +1105,7 @@ hr.black-line {
     .textos-nosotros .grid-nos .clase-imagenes img {
       width: 200px;
       height: 200px;
-      margin: 0px 10px 20px 10px;
-      border: 1px solid black; }
+      margin: 0px 10px 20px 10px; }
     .textos-nosotros .grid-nos .nos1, .textos-nosotros .grid-nos .nos2, .textos-nosotros .grid-nos .nos3, .textos-nosotros .grid-nos .nos4 {
       font-size: 22px; }
     .textos-nosotros .grid-nos .nos2 {
@@ -1103,8 +1120,7 @@ hr.black-line {
     .textos-nosotros .grid-nos .clase-imagenes img {
       width: 250px;
       height: 250px;
-      margin: 0px 15px 20px 15px;
-      border: 1px solid black; }
+      margin: 0px 15px 20px 15px; }
     .textos-nosotros .grid-nos .nos1, .textos-nosotros .grid-nos .nos2, .textos-nosotros .grid-nos .nos3, .textos-nosotros .grid-nos .nos4 {
       font-size: 26px; }
     .textos-nosotros .grid-nos .nos3 {
@@ -1122,8 +1138,7 @@ hr.black-line {
     .textos-nosotros .grid-nos .clase-imagenes img {
       width: 300px;
       height: 300px;
-      margin-bottom: 25px;
-      border: 1px solid black; }
+      margin-bottom: 25px; }
     .textos-nosotros .grid-nos .nos1, .textos-nosotros .grid-nos .nos2, .textos-nosotros .grid-nos .nos3, .textos-nosotros .grid-nos .nos4 {
       font-size: 26px; }
     .textos-nosotros .grid-nos .nos2 {
