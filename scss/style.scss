@@ -1,9 +1,8 @@
 /* SOLO IMPORT */
 @import "./utils/variables";
-@import "./utils/listas";
-@import "./utils/mapas";
 @import "./utils/mixin";
 @import "./utils/extend";
+@import "./utils/keyframes";
 
 /* ESTILOS GLOBALES */
 
@@ -117,7 +116,7 @@ a:hover {
             font-size: 20px;
             color: $color-blanco;
             background-color: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+            box-shadow: $sombreado;
             padding: 6px;
             border-radius: 10px;
             border: $borde;
@@ -142,7 +141,6 @@ hr.black-line2{
     @include redes;
     bottom: 20px;
     background-color: $wsp;
-    animation: animacionNos 2s infinite;
     img {
         @include redes-img;
     }
@@ -150,8 +148,7 @@ hr.black-line2{
 .instagram-icono{
     @include redes;
     bottom: 90px;
-    background-color: $ig;
-    animation: animacionNos 2s infinite;    
+    background-color: $ig; 
     img {
         @include redes-img;
     }
@@ -164,6 +161,7 @@ hr.black-line2{
     a{
         background: linear-gradient(to bottom, #3c2a21e1, #63524ae1); 
         color: $color-blanco; 
+        box-shadow: $sombreado;
         border: $borde; 
         text-decoration: none; 
         padding: 10px 20px;
@@ -201,7 +199,7 @@ hr.black-line2{
 .cont-todo{
     border: $borde;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: $sombreado;
     padding: 10px;
     background-color: #9e9e9e73;
     .margin-cont{
@@ -211,7 +209,7 @@ hr.black-line2{
 }
 .fondo-tit3{
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: $sombreado;
     border-radius: 8px;
     padding: 7px;
     .tit3-cont{
@@ -369,7 +367,7 @@ hr.black-line {
      .tit-nosotros{
         color: $color-blanco;
         font-size: 22px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+        box-shadow: $sombreado;
         padding: 10px;
         font-weight: 800;
         border-radius: 10px;
@@ -377,16 +375,21 @@ hr.black-line {
         margin: 10px 100px 20px 100px;
         animation: colorNos 5s infinite;
      }
-    .nos2{
-        color: $color-blanco;
-        font-size: 17px;
-        background-color: #38291d9f; 
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-        padding: 10px;
-        border-radius: 10px;
-        border: $borde; 
-        
-        
+    .grid-nos{
+        .clase-imgenes{
+            img{
+                
+            }
+        }
+        .nos2{
+            color: $color-blanco;
+            font-size: 17px;
+            background-color: #38291d9f; 
+            box-shadow: $sombreado;
+            padding: 10px;
+            border-radius: 10px;
+            border: $borde; 
+        }
     }
     
 }
@@ -394,6 +397,8 @@ hr.black-line {
     margin-bottom: 20px;
     .btn-marron {
         @extend %boton; 
+        margin-left: 24px;
+        justify-content: center;
     }
 }
 .color-nos{

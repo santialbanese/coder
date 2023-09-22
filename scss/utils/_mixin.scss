@@ -15,6 +15,7 @@
     position: fixed;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: animacionNos 2s infinite; 
     display: block;
     width: 60px;
     height: 60px;
@@ -34,22 +35,6 @@
 @mixin productos($width, $columnas, $justify){
     width: $width;
     grid-template-columns: $columnas;
-    background-color: $color-blanco;
     justify-items: $justify; 
     border-radius: 5px;
-}
-@keyframes colorNos {
-    0% { background-color: #362706; }
-    50% { background-color: #534015; }
-    100% { background-color: #362706; }
-}
-@keyframes animacionNos {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
-    100% { transform: translateY(0); }
-}
-@keyframes animacionAgranda {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
 }

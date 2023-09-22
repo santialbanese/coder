@@ -1,4 +1,13 @@
 /* SOLO IMPORT */
+.container .btn-marron {
+  background: linear-gradient(to bottom, #3c2a21e1, #63524ae1);
+  color: white;
+  border: 1px solid black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px; }
+
 @keyframes colorNos {
   0% {
     background-color: #362706; }
@@ -22,15 +31,6 @@
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
-
-.container .btn-marron {
-  background: linear-gradient(to bottom, #3c2a21e1, #63524ae1);
-  color: white;
-  border: 1px solid black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px; }
 
 /* ESTILOS GLOBALES */
 * {
@@ -147,13 +147,13 @@ hr.black-line2 {
   position: fixed;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: animacionNos 2s infinite;
   display: block;
   width: 60px;
   height: 60px;
   right: 20px;
   bottom: 20px;
-  background-color: #25d366;
-  animation: animacionNos 2s infinite; }
+  background-color: #25d366; }
   .whatsapp-icono img {
     width: 100%;
     height: 100%;
@@ -164,13 +164,13 @@ hr.black-line2 {
   position: fixed;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: animacionNos 2s infinite;
   display: block;
   width: 60px;
   height: 60px;
   right: 20px;
   bottom: 90px;
-  background-color: #5851DB;
-  animation: animacionNos 2s infinite; }
+  background-color: #5851DB; }
   .instagram-icono img {
     width: 100%;
     height: 100%;
@@ -183,6 +183,7 @@ hr.black-line2 {
 .visita a {
   background: linear-gradient(to bottom, #3c2a21e1, #63524ae1);
   color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   border: 1px solid black;
   text-decoration: none;
   padding: 10px 20px;
@@ -224,7 +225,7 @@ hr.black-line2 {
 
 .fondo-tit3 {
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   padding: 7px; }
   .fondo-tit3 .tit3-cont {
@@ -261,7 +262,6 @@ hr.black-line2 {
   .father .padre-productos {
     width: 80%;
     grid-template-columns: auto auto;
-    background-color: white;
     justify-items: center;
     border-radius: 5px;
     display: grid;
@@ -361,7 +361,7 @@ hr.black-line {
     border: 1px solid black;
     margin: 10px 100px 20px 100px;
     animation: colorNos 5s infinite; }
-  .textos-nosotros .nos2 {
+  .textos-nosotros .grid-nos .nos2 {
     color: white;
     font-size: 17px;
     background-color: #38291d9f;
@@ -372,6 +372,9 @@ hr.black-line {
 
 .container {
   margin-bottom: 20px; }
+  .container .btn-marron {
+    margin-left: 24px;
+    justify-content: center; }
 
 .color-nos {
   background-image: url(../multimedia/Clinchi.jpg); }
@@ -403,8 +406,7 @@ hr.black-line {
   .cont img {
     padding: 10px; }
   .texto {
-    top: 20%;
-    transform: translate(-50%, -50%); }
+    top: 20%; }
   .parrafo, .parrafo2, .parrafo3 {
     font-size: 14px;
     padding: 8px; }
@@ -665,8 +667,9 @@ hr.black-line {
   .father .padre-productos {
     width: 90%;
     grid-template-columns: auto;
-    row-gap: 1rem;
     justify-items: flex-start;
+    border-radius: 5px;
+    row-gap: 1rem;
     padding: 5px; }
     .father .padre-productos .divs .texto-corrido {
       margin-left: 5px; }
@@ -699,7 +702,6 @@ hr.black-line {
   .father .padre-productos {
     width: 90%;
     grid-template-columns: auto;
-    background-color: white;
     justify-items: flex-start;
     border-radius: 5px;
     row-gap: 1rem;
@@ -1011,5 +1013,42 @@ hr.black-line {
     font-size: 24; } }
 
 @media (min-width: 321px) and (max-width: 500px) {
-  .nos2 {
-    font-size: 15px; } }
+  .textos-nosotros .grid-nos .clase-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .textos-nosotros .grid-nos .clase-imagenes img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border: 1px solid black; }
+  .textos-nosotros .nos2 {
+    font-size: 17px; } }
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .textos-nosotros .grid-nos .clase-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .textos-nosotros .grid-nos .clase-imagenes img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border: 1px solid black; }
+  .textos-nosotros .grid-nos .nos2 {
+    font-size: 20px; } }
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .textos-nosotros .grid-nos {
+    margin-bottom: 20px; }
+    .textos-nosotros .grid-nos .clase-imagenes img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      border: 1px solid black; }
+    .textos-nosotros .grid-nos .nos2 {
+      font-size: 22px; } }

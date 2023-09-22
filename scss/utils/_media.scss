@@ -15,7 +15,6 @@
     
     .texto {
         top: 20%;
-        transform: translate(-50%, -50%);
     }
     
     .parrafo, .parrafo2, .parrafo3 {
@@ -376,10 +375,8 @@
 @media (max-width: 320px) {
     .father{
         .padre-productos{
-            width: 90%; 
-            grid-template-columns: auto; 
+            @include productos(90%, auto, flex-start);
             row-gap: 1rem; 
-            justify-items: flex-start;
             padding: 5px;
             .divs{
                 .texto-corrido {
@@ -911,8 +908,66 @@
             font-size: 24;
         }
     }
+    //NOSOTROS
     @media (min-width: 321px) and (max-width: 500px){
-        .nos2{
-            font-size: 15px;
+        .textos-nosotros{
+            .grid-nos{
+                .clase-imagenes{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 10px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        border: $borde;
+                    }
+                }
+            }
+            .nos2{
+                font-size: 17px;
+            }
+        }
+    }
+    @media (min-width: 501px) and (max-width: 700px){
+        .textos-nosotros{
+            .grid-nos{
+                .clase-imagenes{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        margin-bottom: 15px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        border: $borde;
+                    }
+                }
+                .nos2{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @media (min-width: 701px) and (max-width: 900px){
+        .textos-nosotros{
+            .grid-nos{
+                margin-bottom: 20px;
+                .clase-imagenes{
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        margin-bottom: 20px;
+                        border: $borde;
+                    }
+                }
+                .nos2{
+                    font-size: 22px;
+                }
+            }
         }
     }
