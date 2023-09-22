@@ -1,6 +1,30 @@
 /* SOLO IMPORT */
+@keyframes colorNos {
+  0% {
+    background-color: #362706; }
+  50% {
+    background-color: #534015; }
+  100% {
+    background-color: #362706; } }
+
+@keyframes animacionNos {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes animacionAgranda {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
 .container .btn-marron {
-  background: linear-gradient(to bottom, #613613, #8B4513);
+  background: linear-gradient(to bottom, #3c2a21e1, #63524ae1);
   color: white;
   border: 1px solid black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
@@ -87,6 +111,8 @@ a:hover {
     width: 100%;
     height: 100%;
     padding: 20px; }
+  .cont .clase-a {
+    text-decoration: none; }
   .cont .texto {
     position: absolute;
     top: 30%;
@@ -102,7 +128,8 @@ a:hover {
       border-radius: 10px;
       border: 1px solid black;
       font-weight: 500;
-      z-index: 1000; }
+      z-index: 1000;
+      animation: animacionAgranda 2s infinite; }
   .cont .parrafo2, .cont .parrafo3 {
     font-size: 16px;
     color: #362706;
@@ -125,7 +152,8 @@ hr.black-line2 {
   height: 60px;
   right: 20px;
   bottom: 20px;
-  background-color: #25d366; }
+  background-color: #25d366;
+  animation: animacionNos 2s infinite; }
   .whatsapp-icono img {
     width: 100%;
     height: 100%;
@@ -141,7 +169,8 @@ hr.black-line2 {
   height: 60px;
   right: 20px;
   bottom: 90px;
-  background-color: #5851DB; }
+  background-color: #5851DB;
+  animation: animacionNos 2s infinite; }
   .instagram-icono img {
     width: 100%;
     height: 100%;
@@ -322,10 +351,21 @@ hr.black-line {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .textos-nosotros .tit-nosotros {
+    color: white;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px 100px 20px 100px;
+    animation: colorNos 5s infinite; }
   .textos-nosotros .nos2 {
     color: white;
     font-size: 17px;
-    background-color: saddlebrown;
+    background-color: #38291d9f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
     padding: 10px;
     border-radius: 10px;
     border: 1px solid black; }
@@ -336,8 +376,11 @@ hr.black-line {
 .color-nos {
   background-image: url(../multimedia/Clinchi.jpg); }
 
+.color-todo-nos {
+  background: linear-gradient(#3c2a21e1, #63524ae1); }
+
 .degrade-nos {
-  background: linear-gradient(saddlebrown, white); }
+  background: linear-gradient(#443424, black); }
 
 .animate__animated {
   animation-duration: 1s;
@@ -836,7 +879,6 @@ hr.black-line {
     grid-template-columns: auto; }
     .imagenes-promos .img-promos-grid .parr-promos {
       display: block;
-      text-decoration: underline;
       font-weight: bold; }
   .font-promo {
     font-size: 22px;
@@ -866,7 +908,6 @@ hr.black-line {
     grid-template-columns: auto; }
     .imagenes-promos .img-promos-grid .parr-promos {
       display: block;
-      text-decoration: underline;
       font-weight: bold; }
   .texto-promo2 {
     font-size: 18; } }
@@ -888,7 +929,6 @@ hr.black-line {
     margin: 0 10px; }
     .imagenes-promos .img-promos-grid .parr-promos {
       display: block;
-      text-decoration: underline;
       font-weight: bold; }
   .texto-promo1 {
     font-size: 24; }
@@ -914,7 +954,6 @@ hr.black-line {
       margin: 0 30px; }
       .imagenes-promos .img-promos-grid .parr-promos {
         display: block;
-        text-decoration: underline;
         font-weight: bold; }
   .texto-promo1 {
     font-size: 26; }
@@ -940,7 +979,6 @@ hr.black-line {
       margin: 0 50px; }
       .imagenes-promos .img-promos-grid .parr-promos {
         display: block;
-        text-decoration: underline;
         font-weight: bold; }
   .texto-promo1 {
     font-size: 28; }
@@ -966,7 +1004,6 @@ hr.black-line {
       margin: 0 40px; }
       .imagenes-promos .img-promos-grid .parr-promos {
         display: block;
-        text-decoration: underline;
         font-weight: bold; }
   .texto-promo1 {
     font-size: 28; }

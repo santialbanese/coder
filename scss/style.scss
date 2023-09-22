@@ -104,6 +104,9 @@ a:hover {
         padding: 20px;
         
     }
+    .clase-a{
+        text-decoration: none;
+    }
     .texto {
         position: absolute;
         top: 30%;
@@ -120,6 +123,7 @@ a:hover {
             border: $borde;
             font-weight: 500;
             z-index: 1000;
+            animation: animacionAgranda 2s infinite;
         
         }
     }
@@ -138,6 +142,7 @@ hr.black-line2{
     @include redes;
     bottom: 20px;
     background-color: $wsp;
+    animation: animacionNos 2s infinite;
     img {
         @include redes-img;
     }
@@ -146,6 +151,7 @@ hr.black-line2{
     @include redes;
     bottom: 90px;
     background-color: $ig;
+    animation: animacionNos 2s infinite;    
     img {
         @include redes-img;
     }
@@ -358,16 +364,31 @@ hr.black-line {
 
 .textos-nosotros{
     @include flex;
+    
     flex-direction: column;
-     
+     .tit-nosotros{
+        color: $color-blanco;
+        font-size: 22px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        font-weight: 800;
+        border-radius: 10px;
+        border: $borde;
+        margin: 10px 100px 20px 100px;
+        animation: colorNos 5s infinite;
+     }
     .nos2{
         color: $color-blanco;
         font-size: 17px;
-        background-color: $color-nos2; 
+        background-color: #38291d9f; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
         padding: 10px;
         border-radius: 10px;
         border: $borde; 
+        
+        
     }
+    
 }
 .container{
     margin-bottom: 20px;
@@ -378,10 +399,12 @@ hr.black-line {
 .color-nos{
     background-image: url(../multimedia/Clinchi.jpg);
 }
-
+.color-todo-nos{
+    background: $gradient-promo;
+}
 
 .degrade-nos{
-    background: linear-gradient( $color-nos2, $color-blanco);
+    background: linear-gradient( $prod-body, $color-negro);
 }
 .animate__animated {
     animation-duration: 1s;
